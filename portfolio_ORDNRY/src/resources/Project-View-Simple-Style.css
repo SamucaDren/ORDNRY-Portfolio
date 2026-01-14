@@ -1,0 +1,23 @@
+.project-view-simple-container {
+  display: flex;
+
+  gap: 120px;
+  align-items: center;
+  align-self: stretch;
+}
+
+.project-view-simple-image {
+  aspect-ratio: 1 / 1;
+  max-width: 504px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: top left;
+  background: linear-gradient(180deg, rgba(60, 20, 19, 0) 0%, #3c1413 100%);
+}
+
+.project-view-simple-container-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

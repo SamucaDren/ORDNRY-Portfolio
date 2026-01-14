@@ -52,7 +52,7 @@ function HeroSection() {
             transformando a interação em uma jornada fluida e significativa.
           </p>
         </div>
-        <Button text="VER MEUS PROJETOS" />
+        <Button text="CONFERIR PROJETOS" />
       </div>
       <img
         src={ORDNRY_overlay_hero}

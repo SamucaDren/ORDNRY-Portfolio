@@ -1,7 +1,14 @@
-import HeroSection from "./Componentes/HeroSection";
+import HeroSection from "./Sections/HeroSection";
+import ProjectsSection from "./Sections/ProjectsSection";
+import "./Home-Style.css";
 
 function Home() {
-  return <HeroSection />;
+  return (
+    <div className="home-page">
+      <HeroSection />
+      <ProjectsSection />
+    </div>
+  );
 }
 
 export default Home;

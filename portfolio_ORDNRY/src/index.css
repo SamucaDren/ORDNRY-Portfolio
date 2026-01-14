@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
-
 :root {
   --heading-font-family: "Manrope";
   --body-font-family: "Inter";
@@ -38,6 +36,14 @@
   font-family: var(--heading-font-family);
   font-size: 72px;
   font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.heading-56-semi {
+  font-family: var(--heading-font-family);
+  font-size: 56px;
+  font-weight: 600;
   line-height: 1.2;
   margin: 0;
 }

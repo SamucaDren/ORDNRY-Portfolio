@@ -6,8 +6,10 @@
   gap: 24px;
   padding: 48px 24px;
   border-radius: 12px;
-  max-width: 4000px;
+  width: calc(100% - 32px);
   margin: 16px;
+  box-sizing: border-box;
+
   align-items: center;
   background: var(--Gradiente);
 }
@@ -51,6 +53,7 @@
     border-radius: 24px;
     margin: 0;
     gap: 64px;
+    width: 100%;
     border-radius: 0px;
     background: linear-gradient(144deg, #332525 20.82%, #0d0808 79.18%);
   }

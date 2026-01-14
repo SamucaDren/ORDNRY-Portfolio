@@ -1,6 +1,8 @@
 :root {
-  --heading-font-family: "Manrope";
-  --body-font-family: "Inter";
+  --heading-font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --body-font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 
   --red-black-01: #3c1413;
   --red-black-02: #5b1d1d;
@@ -30,35 +32,104 @@
   --Gradiente-Button: linear-gradient(93deg, #bb3736 0.2%, #551919 100.2%);
 }
 
-/*HEADING CASE*/
+/* =========================
+   FONTES (CLS SAFE)
+========================= */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   RESET + BASE
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--neutral-100);
+  color: var(--neutral-700);
+
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   HEADING CASE
+========================= */
 
 .heading-72-medium {
   font-family: var(--heading-font-family);
-  font-size: 72px;
+  font-size: clamp(3rem, 6vw, 4.5rem);
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.15;
   margin: 0;
 }
 
 .heading-56-semi {
   font-family: var(--heading-font-family);
-  font-size: 56px;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
   margin: 0;
 }
 
 .heading-48-medium {
   font-family: var(--heading-font-family);
-  font-size: 48px;
+  font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.15;
   margin: 0;
 }
 
 .heading-40-semi {
   font-family: var(--heading-font-family);
-  font-size: 40px;
+  font-size: clamp(1.9rem, 3.5vw, 2.5rem);
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
@@ -66,19 +137,21 @@
 
 .heading-32-semi {
   font-family: var(--heading-font-family);
-  font-size: 32px;
+  font-size: clamp(1.6rem, 3vw, 2rem);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
   margin: 0;
 }
 
-/*BODY CASE*/
+/* =========================
+   BODY CASE
+========================= */
 
 .body-20-medium {
   font-family: var(--body-font-family);
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -86,7 +159,7 @@
   font-family: var(--body-font-family);
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -94,7 +167,7 @@
   font-family: var(--body-font-family);
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -102,11 +175,14 @@
   font-family: var(--body-font-family);
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
-/*COLOR CASE*/
+/* =========================
+   COLOR CASE
+========================= */
+
 .color-red-black-01 {
   color: var(--red-black-01);
 }
@@ -168,7 +244,9 @@
   color: var(--neutral-800);
 }
 
-/*BACKGROUND CASE*/
+/* =========================
+   BACKGROUND CASE
+========================= */
 
 .background-red-black-01 {
   background-color: var(--red-black-01);
@@ -231,18 +309,14 @@
   background-color: var(--neutral-800);
 }
 
-/*OUTROS*/
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* =========================
+   CLS FIX – HERO (IMPORTANTE)
+========================= */
 
-  background-color: var(--neutral-100);
-  color: var(--neutral-700);
-  font-size: 16px;
-  font-family: var(--body-font-family);
-}
-
-#root {
-  width: 100%;
+/* Aplique essa classe no container do hero */
+.hero-content-container {
+  min-height: 420px; /* trava o layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

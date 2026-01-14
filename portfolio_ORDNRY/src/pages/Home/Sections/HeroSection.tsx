@@ -30,7 +30,7 @@ function HeroSection() {
                 isMobile ? "body-16-medium" : "body-18-medium"
               }`}
             >
-              DESIGN EM ESSÊNCIA
+              <strong>DESIGN EM ESSÊNCIA</strong>
             </span>
             <h1
               className={
@@ -49,7 +49,8 @@ function HeroSection() {
             }
           >
             Crio soluções digitais que equilibram design e usabilidade,
-            transformando a interação em uma jornada fluida e significativa.
+            transformando {isMobile ? null : <br></br>} interação em uma jornada
+            fluida e significativa.
           </p>
         </div>
         <Button text="CONFERIR PROJETOS" />

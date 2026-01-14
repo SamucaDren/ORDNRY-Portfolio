@@ -73,7 +73,7 @@ export default function Navbar() {
         </svg>
       ) : (
         <>
-          <div className="container-nav-link color-neutral-500 body-18-medium">
+          <div className="container-nav-link color-neutral-500 body-16-medium">
             <a>Projetos</a>
             <a>Sobre mim</a>
             <a>Contato</a>

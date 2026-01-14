@@ -44,7 +44,7 @@ function ProjectsSection() {
               isMobile ? "body-16-medium" : "body-18-medium"
             }`}
           >
-            DESTAQUES
+            <strong>DESTAQUES</strong>
           </span>
           <h2
             className={`color-neutral-800 ${
@@ -97,9 +97,10 @@ function ProjectsSection() {
 
       {loading && <p>Carregando projetos...</p>}
       {error && <p>{error}</p>}
-      {projetos.map((projeto) => (
+      {projetos.map((projeto, index) => (
         <Project_View_Simple
           key={projeto.id}
+          count={index + 1} // aqui é o número do projeto
           name={projeto.name}
           description={projeto.description}
           imageUrl={projeto.capaUrl}

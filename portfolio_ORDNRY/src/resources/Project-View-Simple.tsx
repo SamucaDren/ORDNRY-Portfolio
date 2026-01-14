@@ -7,6 +7,7 @@ type ProjectViewSimpleProps = {
   imageUrl: string;
   typeOfCase?: string;
   typeOfProject?: string;
+  count: number;
 };
 
 function Project_View_Simple({
@@ -15,6 +16,7 @@ function Project_View_Simple({
   imageUrl,
   typeOfCase,
   typeOfProject,
+  count,
 }: ProjectViewSimpleProps) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -31,14 +33,16 @@ function Project_View_Simple({
 
   return (
     <div className="project-view-simple-container">
-      <img className="project-view-simple-image" src={imageUrl} alt={name} />
+      {count % 2 == 0 ? null : (
+        <img className="project-view-simple-image" src={imageUrl} alt={name} />
+      )}
       <div className="project-view-simple-container-content">
         <span
           className={
             (isMobile ? "body-16-medium" : "body-18-medium") + " color-red-01"
           }
         >
-          {typeOfCase + " / " + typeOfProject}
+          <strong>{typeOfCase + " / " + typeOfProject}</strong>
         </span>
         <h3
           className={
@@ -57,6 +61,9 @@ function Project_View_Simple({
           {description}
         </p>
       </div>
+      {count % 2 !== 0 ? null : (
+        <img className="project-view-simple-image" src={imageUrl} alt={name} />
+      )}
     </div>
   );
 }

@@ -56,6 +56,7 @@ function HeroSection() {
         <Button text="CONFERIR PROJETOS" />
       </div>
       <img
+        loading="lazy"
         src={ORDNRY_overlay_hero}
         alt="ORDNRY overlay"
         className="overlay-hero"

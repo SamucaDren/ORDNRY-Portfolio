@@ -36,11 +36,21 @@ function Project_View_Simple({
   return (
     <div className="project-view-simple-container">
       {isMobile && (
-        <img className="project-view-simple-image" src={imageUrl} alt={name} />
+        <img
+          loading="lazy"
+          className="project-view-simple-image"
+          src={imageUrl}
+          alt={name}
+        />
       )}
       {/* Desktop: se count ímpar, imagem antes; Mobile: sempre antes */}
       {!isMobile && count % 2 !== 0 && (
-        <img className="project-view-simple-image" src={imageUrl} alt={name} />
+        <img
+          loading="lazy"
+          className="project-view-simple-image"
+          src={imageUrl}
+          alt={name}
+        />
       )}
 
       <div className="project-view-simple-container-content">
@@ -88,7 +98,12 @@ function Project_View_Simple({
       {/* Desktop: se count par, imagem depois; Mobile: sempre depois */}
 
       {!isMobile && count % 2 === 0 && (
-        <img className="project-view-simple-image" src={imageUrl} alt={name} />
+        <img
+          loading="lazy"
+          className="project-view-simple-image"
+          src={imageUrl}
+          alt={name}
+        />
       )}
 
       {/* Mobile: imagem sempre depois (ou antes, se preferir) */}

@@ -1,6 +1,7 @@
 .hero-section {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: var(--neutral-700);
   gap: 24px;
   padding: 48px 24px;
@@ -40,6 +41,6 @@
 .overlay-hero {
   position: absolute;
   width: 100%;
-  bottom: 300px;
+  bottom: -17px;
   z-index: 1;
 }

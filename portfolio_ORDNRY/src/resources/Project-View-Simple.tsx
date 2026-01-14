@@ -73,7 +73,7 @@ function Project_View_Simple({
           target="_blank"
           rel="noopener noreferrer"
         >
-          Conferir Projeto
+          Ver Projeto
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"

@@ -1,0 +1,45 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-700);
+  gap: 24px;
+  padding: 48px 24px;
+  border-radius: 12px;
+  max-width: 4000px;
+  margin: 16px;
+  align-items: center;
+  background: var(--Gradiente);
+}
+
+.hero-heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-copy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 800px;
+  text-align: center;
+  height: 588px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.overlay-hero {
+  position: absolute;
+  width: 100%;
+  bottom: 300px;
+  z-index: 1;
+}

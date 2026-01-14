@@ -1,0 +1,32 @@
+.container-navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  max-width: 1232px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-nav-link {
+  display: flex;
+  width: 504px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.container-nav-link a:hover {
+  color: var(--red-withe-03);
+  transition: color 0.3s ease;
+}
+
+.logo-navbar {
+  fill: var(--neutral-200);
+}
+
+.container-profile {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}

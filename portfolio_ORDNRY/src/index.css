@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --heading-font-family: "Manrope";
+  --body-font-family: "Inter";
+
+  --red-black-01: #3c1413;
+  --red-black-02: #5b1d1d;
+  --red-black-03: #7b2626;
+  --red-black-04: #9b2f2e;
+  --red-01: #bb3736;
+  --red-02: #c85655;
+  --red-03: #d47675;
+  --red-withe-01: #e09796;
+  --red-withe-02: #ebb8b8;
+  --red-withe-03: #f5dada;
+  --red-withe-04: #fffdfd;
+
+  --neutral-000: #ffffff;
+  --neutral-100: #fcf8f8;
+  --neutral-200: #f2e9e9;
+  --neutral-300: #d9c7c7;
+  --neutral-400: #ccb8b8;
+  --neutral-500: #998181;
+  --neutral-600: #675454;
+  --neutral-700: #332929;
+  --neutral-800: #0d0808;
+
+  --complementar-grenn: #00ff80;
+
+  --Gradiente: linear-gradient(106deg, #0d0808 0%, #332525 50.9%, #0d0808 100%);
+  --Gradiente-Button: linear-gradient(93deg, #bb3736 0.2%, #551919 100.2%);
+}
+
+/*HEADING CASE*/
+
+.heading-72-medium {
+  font-family: var(--heading-font-family);
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.heading-48-medium {
+  font-family: var(--heading-font-family);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/*BODY CASE*/
+
+.body-20-medium {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.body-20-semi {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.body-18-medium {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.body-16-medium {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/*COLOR CASE*/
+.color-red-black-01 {
+  color: var(--red-black-01);
+}
+.color-red-black-02 {
+  color: var(--red-black-02);
+}
+.color-red-black-03 {
+  color: var(--red-black-03);
+}
+.color-red-black-04 {
+  color: var(--red-black-04);
+}
+.color-red-01 {
+  color: var(--red-01);
+}
+.color-red-02 {
+  color: var(--red-02);
+}
+.color-red-03 {
+  color: var(--red-03);
+}
+.color-red-withe-01 {
+  color: var(--red-withe-01);
+}
+.color-red-withe-02 {
+  color: var(--red-withe-02);
+}
+.color-red-withe-03 {
+  color: var(--red-withe-03);
+}
+.color-red-withe-04 {
+  color: var(--red-withe-04);
+}
+.color-neutral-000 {
+  color: var(--neutral-000);
+}
+.color-neutral-100 {
+  color: var(--neutral-100);
+}
+.color-neutral-200 {
+  color: var(--neutral-200);
+}
+.color-neutral-300 {
+  color: var(--neutral-300);
+}
+.color-neutral-400 {
+  color: var(--neutral-400);
+}
+.color-neutral-500 {
+  color: var(--neutral-500);
+}
+.color-neutral-600 {
+  color: var(--neutral-600);
+}
+.color-neutral-700 {
+  color: var(--neutral-700);
+}
+.color-neutral-800 {
+  color: var(--neutral-800);
+}
+
+/*BACKGROUND CASE*/
+
+.background-red-black-01 {
+  background-color: var(--red-black-01);
+}
+.background-red-black-02 {
+  background-color: var(--red-black-02);
+}
+.background-red-black-03 {
+  background-color: var(--red-black-03);
+}
+.background-red-black-04 {
+  background-color: var(--red-black-04);
+}
+.background-red-01 {
+  background-color: var(--red-01);
+}
+.background-red-02 {
+  background-color: var(--red-02);
+}
+.background-red-03 {
+  background-color: var(--red-03);
+}
+.background-red-withe-01 {
+  background-color: var(--red-withe-01);
+}
+.background-red-withe-02 {
+  background-color: var(--red-withe-02);
+}
+.background-red-withe-03 {
+  background-color: var(--red-withe-03);
+}
+.background-red-withe-04 {
+  background-color: var(--red-withe-04);
+}
+.background-neutral-000 {
+  background-color: var(--neutral-000);
+}
+.background-neutral-100 {
+  background-color: var(--neutral-100);
+}
+.background-neutral-200 {
+  background-color: var(--neutral-200);
+}
+.background-neutral-300 {
+  background-color: var(--neutral-300);
+}
+.background-neutral-400 {
+  background-color: var(--neutral-400);
+}
+.background-neutral-500 {
+  background-color: var(--neutral-500);
+}
+.background-neutral-600 {
+  background-color: var(--neutral-600);
+}
+.background-neutral-700 {
+  background-color: var(--neutral-700);
+}
+.background-neutral-800 {
+  background-color: var(--neutral-800);
+}
+
+/*OUTROS*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: var(--neutral-100);
+  color: var(--neutral-700);
+  font-size: 16px;
+  font-family: var(--body-font-family);
+}
+
+#root {
+  width: 100%;
+}

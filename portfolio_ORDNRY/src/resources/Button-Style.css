@@ -1,0 +1,61 @@
+:root {
+  --Gradiente-Button: linear-gradient(93deg, #bb3736 0.2%, #551919 100.2%);
+}
+
+.btn-primary {
+  position: relative;
+  display: flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: fit-content;
+
+  border-radius: 38px;
+  border: none;
+  cursor: pointer;
+  color: var(--neutral-000);
+
+  background: var(--Gradiente-Button);
+  background-size: 300% 300%;
+  background-position: 0% 50%;
+
+  transition: background-position 0.6s ease;
+
+  z-index: 0;
+}
+
+/* anima ao passar o mouse */
+.btn-primary:hover {
+  background-position: 100% 50%;
+}
+
+/* Borda em gradiente */
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    93deg,
+    rgba(212, 118, 117, 0),
+    rgba(212, 118, 117, 1),
+    rgba(212, 118, 117, 0)
+  );
+
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+/* hover da borda */
+.btn-primary:hover::before {
+  opacity: 1;
+}

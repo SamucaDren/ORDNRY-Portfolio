@@ -44,3 +44,23 @@
   height: 2px;
   background-color: var(--neutral-200);
 }
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 80px 24px 80px 24px;
+    gap: 64px;
+  }
+
+  .projects-content-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .projects-header-container {
+    width: 100%;
+  }
+
+  .projects-copy-container {
+    gap: 24px;
+  }
+}

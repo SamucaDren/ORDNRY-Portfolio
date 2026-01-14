@@ -11,6 +11,8 @@ export type ProjetoPortfolio = {
   name: string;
   description: string;
   capaUrl: string;
+  typeOfCase?: string;
+  typeOfProject?: string;
 };
 
 // buscar todos
@@ -22,6 +24,8 @@ export async function getProjetos(): Promise<ProjetoPortfolio[]> {
     name: prismic.asText(doc.data.name) || "",
     description: prismic.asText(doc.data.description) || "",
     capaUrl: doc.data.capa?.url || "",
+    typeOfCase: doc.data.type_of_case || "",
+    typeOfProject: doc.data.type_of_project || "",
   }));
 }
 
@@ -34,5 +38,7 @@ export async function getProjetoById(id: string): Promise<ProjetoPortfolio> {
     name: prismic.asText(doc.data.name) || "",
     description: prismic.asText(doc.data.description) || "",
     capaUrl: doc.data.capa?.url || "",
+    typeOfCase: doc.data.type_of_case || "",
+    typeOfProject: doc.data.type_of_project || "",
   };
 }

@@ -21,3 +21,21 @@
   flex-direction: column;
   gap: 16px;
 }
+
+@media (max-width: 768px) {
+  .project-view-simple-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .project-view-simple-container-content {
+    gap: 32px;
+  }
+
+  .project-view-simple-image {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: unset;
+    height: auto;
+  }
+}

@@ -56,6 +56,14 @@
   margin: 0;
 }
 
+.heading-32-semi {
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
 /*BODY CASE*/
 
 .body-20-medium {

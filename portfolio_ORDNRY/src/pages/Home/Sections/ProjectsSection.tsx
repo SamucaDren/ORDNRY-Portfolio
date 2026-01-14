@@ -46,7 +46,11 @@ function ProjectsSection() {
           >
             DESTAQUES
           </span>
-          <h2 className="heading-56-semi color-neutral-800">
+          <h2
+            className={`color-neutral-800 ${
+              isMobile ? "heading-40-semi" : "heading-56-semi"
+            }`}
+          >
             Meus projetos de UI/UX
           </h2>
         </div>

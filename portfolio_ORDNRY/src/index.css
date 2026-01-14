@@ -56,6 +56,14 @@
   margin: 0;
 }
 
+.heading-40-semi {
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
 .heading-32-semi {
   font-family: var(--heading-font-family);
   font-size: 32px;

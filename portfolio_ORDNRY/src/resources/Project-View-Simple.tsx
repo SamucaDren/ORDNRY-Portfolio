@@ -33,9 +33,14 @@ function Project_View_Simple({
 
   return (
     <div className="project-view-simple-container">
-      {count % 2 == 0 ? null : (
+      {isMobile && (
         <img className="project-view-simple-image" src={imageUrl} alt={name} />
       )}
+      {/* Desktop: se count ímpar, imagem antes; Mobile: sempre antes */}
+      {!isMobile && count % 2 !== 0 && (
+        <img className="project-view-simple-image" src={imageUrl} alt={name} />
+      )}
+
       <div className="project-view-simple-container-content">
         <span
           className={
@@ -61,9 +66,13 @@ function Project_View_Simple({
           {description}
         </p>
       </div>
-      {count % 2 !== 0 ? null : (
+
+      {/* Desktop: se count par, imagem depois; Mobile: sempre depois */}
+      {!isMobile && count % 2 === 0 && (
         <img className="project-view-simple-image" src={imageUrl} alt={name} />
       )}
+
+      {/* Mobile: imagem sempre depois (ou antes, se preferir) */}
     </div>
   );
 }

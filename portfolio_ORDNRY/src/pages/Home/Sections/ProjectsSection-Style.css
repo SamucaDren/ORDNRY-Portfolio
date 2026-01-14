@@ -45,6 +45,22 @@
   background-color: var(--neutral-200);
 }
 
+.link-project-view-simple {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  fill: var(--red-01);
+  transition: all 0.3s ease;
+}
+
+.link-project-view-simple:hover {
+  gap: 16px;
+  fill: var(--red-03);
+  color: var(--red-03);
+}
+
 @media (max-width: 768px) {
   .projects-section {
     padding: 80px 24px 80px 24px;

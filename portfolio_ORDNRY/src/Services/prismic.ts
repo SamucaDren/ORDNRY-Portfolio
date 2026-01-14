@@ -13,6 +13,7 @@ export type ProjetoPortfolio = {
   capaUrl: string;
   typeOfCase?: string;
   typeOfProject?: string;
+  behanceLink?: string;
 };
 
 // buscar todos
@@ -26,6 +27,7 @@ export async function getProjetos(): Promise<ProjetoPortfolio[]> {
     capaUrl: doc.data.capa?.url || "",
     typeOfCase: doc.data.type_of_case || "",
     typeOfProject: doc.data.type_of_project || "",
+    behanceLink: doc.data.behance_link.url || "",
   }));
 }
 
@@ -40,5 +42,6 @@ export async function getProjetoById(id: string): Promise<ProjetoPortfolio> {
     capaUrl: doc.data.capa?.url || "",
     typeOfCase: doc.data.type_of_case || "",
     typeOfProject: doc.data.type_of_project || "",
+    behanceLink: doc.data.behance_link.url || "",
   };
 }

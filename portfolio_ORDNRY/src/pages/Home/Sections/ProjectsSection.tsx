@@ -106,6 +106,7 @@ function ProjectsSection() {
           imageUrl={projeto.capaUrl}
           typeOfCase={projeto.typeOfCase}
           typeOfProject={projeto.typeOfProject}
+          behanceLink={projeto.behanceLink}
         />
       ))}
     </section>

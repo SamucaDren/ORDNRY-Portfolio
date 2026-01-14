@@ -44,7 +44,7 @@ function HeroSection() {
           </div>
           <p
             className={
-              (isMobile ? "body-18-medium" : "body-16-medium") +
+              (isMobile ? "body-16-medium" : "body-18-medium") +
               " color-neutral-200"
             }
           >

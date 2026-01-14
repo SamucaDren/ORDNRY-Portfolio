@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/*import { useEffect, useState } from "react";
 import { getProjetos } from "../Services/prismic";
 import type { ProjetoPortfolio } from "../Services/prismic";
 import { PrismicRichText } from "@prismicio/react";
@@ -45,6 +45,5 @@ function Arquivo() {
       ))}
     </div>
   );
-}
-
-export default Arquivo;
+  export default Arquivo;
+}*/

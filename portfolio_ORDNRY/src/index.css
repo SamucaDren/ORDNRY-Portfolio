@@ -105,7 +105,7 @@ body {
 
 .heading-72-medium {
   font-family: var(--heading-font-family);
-  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-size: 72px;
   font-weight: 500;
   line-height: 1.15;
   margin: 0;
@@ -113,7 +113,7 @@ body {
 
 .heading-56-semi {
   font-family: var(--heading-font-family);
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: 56px;
   font-weight: 600;
   line-height: 1.15;
   margin: 0;
@@ -121,7 +121,7 @@ body {
 
 .heading-48-medium {
   font-family: var(--heading-font-family);
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.15;
   margin: 0;
@@ -129,7 +129,7 @@ body {
 
 .heading-40-semi {
   font-family: var(--heading-font-family);
-  font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
@@ -137,7 +137,7 @@ body {
 
 .heading-32-semi {
   font-family: var(--heading-font-family);
-  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.25;
   margin: 0;

@@ -20,7 +20,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <section className="hero-section">
+    <header className="hero-section">
       <Navbar />
       <div className="hero-content-container">
         <div className="hero-copy-container">
@@ -61,7 +61,7 @@ function HeroSection() {
         alt="ORDNRY overlay"
         className="overlay-hero"
       />
-    </section>
+    </header>
   );
 }
 

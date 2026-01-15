@@ -16,8 +16,15 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 1200px) {
+  .container-nav-link {
+    width: auto;
+    gap: 18px;
+  }
+}
+
 .container-nav-link a:hover {
-  color: var(--red-withe-03);
+  color: var(--red-withe-04);
   transition: color 0.3s ease;
 }
 
@@ -27,6 +34,62 @@
 
 .container-profile {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 32px;
+}
+
+.Linkedin-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  fill: var(--neutral-500);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.Linkedin-link:hover {
+  color: var(--red-withe-04);
+  fill: var(--red-withe-04);
+  transition: color 0.3s ease;
+}
+
+.Linkedin-link:hover .sr-only {
+  background-color: var(--red-black-04);
+  transition: background-color 0.3s ease;
+}
+
+.sr-only {
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1/1;
+  border-radius: 4px;
+  background-color: var(--neutral-700);
+}
+
+.profile-picture-navbar-container {
+  position: relative;
+}
+
+.profile-picture-navbar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.profile-picture-border-navbar-element {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  animation: pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }

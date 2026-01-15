@@ -19,11 +19,11 @@ function ProjectsSection() {
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  // buscar projetos
   useEffect(() => {
     async function fetchProjetos() {
       try {
-        const data = await getProjetos();
+        setLoading(true);
+        const data = await getProjetos(); // sem argumentos
         setProjetos(data);
       } catch {
         setError("Erro ao carregar projetos");

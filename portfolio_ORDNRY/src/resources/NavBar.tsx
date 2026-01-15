@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Navbar-Style.css";
+import scroolToSection from "../utils/scroolToSection";
+
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -41,7 +43,7 @@ export default function Navbar() {
       ) : (
         <>
           <div className="container-nav-link color-neutral-500 body-16-medium">
-            <a>Projetos</a>
+            <a onClick={() => scroolToSection("projects-section")}>Projetos</a>
             <a>Sobre mim</a>
             <a>Contato</a>
             <a>Arquivo</a>

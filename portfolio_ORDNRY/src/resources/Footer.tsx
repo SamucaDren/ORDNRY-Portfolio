@@ -1,6 +1,6 @@
 import "./Footer-Style.css";
 import Button from "./Button";
-import scroolToSection from "../utils/functions";
+import scroolToSection from "../utils/scroolToSection";
 
 function Footer() {
   return (

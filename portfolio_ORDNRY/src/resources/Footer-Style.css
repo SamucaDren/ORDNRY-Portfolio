@@ -69,9 +69,15 @@
   gap: 16px;
   width: 100%;
   color: var(--neutral-400);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .footer-links-column span {
+  color: var(--neutral-200);
+}
+
+.footer-links-column a:hover {
   color: var(--neutral-200);
 }
 

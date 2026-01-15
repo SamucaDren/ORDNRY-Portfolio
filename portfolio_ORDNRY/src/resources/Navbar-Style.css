@@ -16,6 +16,10 @@
   flex-shrink: 0;
 }
 
+.container-nav-link a {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container-nav-link {
     width: auto;

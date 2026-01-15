@@ -3,21 +3,13 @@ import "./ProjectsSection-Style.css";
 import Project_View_Simple from "../../../resources/Project-View-Simple";
 import { getProjetos } from "../../../Services/prismic";
 import type { ProjetoPortfolio } from "../../../Services/prismic";
+import IsMobile from "../../../utils/isMobile";
 
 function ProjectsSection() {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = IsMobile();
   const [projetos, setProjetos] = useState<ProjetoPortfolio[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
-  // detectar mobile
-  useEffect(() => {
-    const checkScreen = () => setIsMobile(window.innerWidth <= 768);
-
-    checkScreen();
-    window.addEventListener("resize", checkScreen);
-    return () => window.removeEventListener("resize", checkScreen);
-  }, []);
 
   useEffect(() => {
     async function fetchProjetos() {

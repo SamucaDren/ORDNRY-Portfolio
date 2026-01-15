@@ -1,5 +1,6 @@
 import "./Footer-Style.css";
 import Button from "./Button";
+import scroolToSection from "../utils/functions";
 
 function Footer() {
   return (
@@ -16,11 +17,21 @@ function Footer() {
 
         <div className="footer-links-container">
           <div className="footer-links-column">
-            <a>Projetos</a>
+            <span>
+              <strong>Conteúdo</strong>
+            </span>
+            <a onClick={() => scroolToSection("projects-section")}>Projetos</a>
             <a>Sobre</a>
             <a>Carreira </a>
           </div>
-          <div className="footer-links-column"></div>
+          <div className="footer-links-column">
+            <span>
+              <strong>Contato</strong>
+            </span>
+            <a>Behance</a>
+            <a>Linkedin</a>
+            <a>Entre em contato</a>
+          </div>
         </div>
       </div>
       <div className="linha-footer"></div>

@@ -36,7 +36,7 @@ function ProjectsSection() {
   }, []);
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects-section">
       <div className="projects-content-container">
         <div className="projects-header-container">
           <span

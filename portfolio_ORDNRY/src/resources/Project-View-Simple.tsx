@@ -23,35 +23,36 @@ function Project_View_Simple({
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkScreen = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
+    const checkScreen = () => setIsMobile(window.innerWidth <= 768);
     checkScreen();
     window.addEventListener("resize", checkScreen);
-
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
+  // ===== imagem otimizada do Prismic =====
+  const imageBase = `${imageUrl}?auto=format,compress`;
+
+  const imgProps: React.ImgHTMLAttributes<HTMLImageElement> = {
+    alt: name,
+    className: "project-view-simple-image",
+    src: `${imageBase}&w=700`,
+    srcSet: `
+    ${imageBase}&w=480 480w,
+    ${imageBase}&w=700 700w,
+    ${imageBase}&w=1024 1024w
+  `,
+    sizes: "(max-width: 768px) 90vw, 637px",
+    loading: count === 1 ? "eager" : "lazy",
+    fetchPriority: count === 1 ? "high" : "auto",
+  };
+
   return (
     <div className="project-view-simple-container">
-      {isMobile && (
-        <img
-          loading="lazy"
-          className="project-view-simple-image"
-          src={imageUrl}
-          alt={name}
-        />
-      )}
-      {/* Desktop: se count ímpar, imagem antes; Mobile: sempre antes */}
-      {!isMobile && count % 2 !== 0 && (
-        <img
-          loading="lazy"
-          className="project-view-simple-image"
-          src={imageUrl}
-          alt={name}
-        />
-      )}
+      {/* Mobile: imagem sempre antes */}
+      {isMobile && <img {...imgProps} />}
+
+      {/* Desktop: imagem antes quando ímpar */}
+      {!isMobile && count % 2 !== 0 && <img {...imgProps} />}
 
       <div className="project-view-simple-container-content">
         <span
@@ -61,6 +62,7 @@ function Project_View_Simple({
         >
           <strong>{typeOfCase + " / " + typeOfProject}</strong>
         </span>
+
         <h3
           className={
             (isMobile ? "heading-32-semi" : "heading-48-medium") +
@@ -69,6 +71,7 @@ function Project_View_Simple({
         >
           {name}
         </h3>
+
         <p
           className={
             (isMobile ? "body-18-medium" : "body-20-medium") +
@@ -77,36 +80,29 @@ function Project_View_Simple({
         >
           {description}
         </p>
-        <a
-          className="body-20-medium color-red-01 link-project-view-simple"
-          href={behanceLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ver Projeto
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="15"
-            viewBox="0 0 25 15"
+
+        {behanceLink && (
+          <a
+            className="body-20-medium color-red-01 link-project-view-simple"
+            href={behanceLink}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z" />
-          </svg>
-        </a>
+            Ver Projeto
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="15"
+              viewBox="0 0 25 15"
+            >
+              <path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z" />
+            </svg>
+          </a>
+        )}
       </div>
 
-      {/* Desktop: se count par, imagem depois; Mobile: sempre depois */}
-
-      {!isMobile && count % 2 === 0 && (
-        <img
-          loading="lazy"
-          className="project-view-simple-image"
-          src={imageUrl}
-          alt={name}
-        />
-      )}
-
-      {/* Mobile: imagem sempre depois (ou antes, se preferir) */}
+      {/* Desktop: imagem depois quando par */}
+      {!isMobile && count % 2 === 0 && <img {...imgProps} />}
     </div>
   );
 }

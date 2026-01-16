@@ -18,6 +18,15 @@
 
 .container-nav-link a {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--neutral-500);
+}
+
+.container-nav-link svg {
+  width: 12px;
+  height: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -29,6 +38,7 @@
 
 .container-nav-link a:hover {
   color: var(--red-withe-04);
+  fill: var(--red-withe-04);
   transition: color 0.3s ease;
 }
 

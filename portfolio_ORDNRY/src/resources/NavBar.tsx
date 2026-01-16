@@ -44,9 +44,14 @@ export default function Navbar() {
         <>
           <div className="container-nav-link color-neutral-500 body-16-medium">
             <a onClick={() => scroolToSection("projects-section")}>Projetos</a>
-            <a>Sobre mim</a>
+            <a onClick={() => scroolToSection("about-me-section")}>Sobre mim</a>
             <a>Contato</a>
-            <a>Arquivo</a>
+            <a>
+              Currículo{" "}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+                <path d="M14.435 1.0001C14.435 0.44782 13.9873 0.000105239 13.435 0.000104987L4.43501 0.000105787C3.88273 0.00010545 3.43501 0.447821 3.43501 1.00011C3.43501 1.55239 3.88273 2.00011 4.43501 2.00011L12.435 2.00011L12.435 10.0001C12.435 10.5524 12.8827 11.0001 13.435 11.0001C13.9873 11.0001 14.435 10.5524 14.435 10.0001L14.435 1.0001ZM0.707092 13.728L1.4142 14.4351L14.1421 1.70721L13.435 1.00011L12.7279 0.292999L-1.44839e-05 13.0209L0.707092 13.728Z" />
+              </svg>
+            </a>
           </div>
           <div className="container-profile">
             <a

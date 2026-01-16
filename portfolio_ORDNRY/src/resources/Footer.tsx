@@ -21,7 +21,7 @@ function Footer() {
               <strong>Conteúdo</strong>
             </span>
             <a onClick={() => scroolToSection("projects-section")}>Projetos</a>
-            <a>Sobre</a>
+            <a onClick={() => scroolToSection("about-me-section")}>Sobre</a>
             <a>Carreira </a>
           </div>
           <div className="footer-links-column">

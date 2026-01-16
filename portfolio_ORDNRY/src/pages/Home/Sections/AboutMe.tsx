@@ -48,8 +48,9 @@ function AboutMe() {
       </div>
       <div className="phrase-impact">
         <h3>
-          <span>Criatividade</span>
-          <br></br>para sua funcionalidade!
+          <span>Criatividade </span>
+          <br />
+          para sua funcionalidade!
         </h3>
       </div>
       <div className="about-me-container">

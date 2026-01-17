@@ -1,4 +1,6 @@
 import "./AboutMe - Style.css";
+import myself_photo from "../../../assets/myself_photo.webp";
+import Fundo_image from "../../../assets/fundo_image.webp";
 
 function AboutMe() {
   return (
@@ -105,6 +107,12 @@ function AboutMe() {
             Sou Samuel Nogueira e atuo no universo do design há mais de 4 anos.
           </p>
         </div>
+        <img
+          className="myselphoto"
+          src={myself_photo}
+          alt="Samuel Nogueira Designer Ordnry"
+        />
+        <img className="fundooimage" src={Fundo_image} alt="Fundo decorativo" />
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import "./AboutMe - Style.css";
 import myself_photo from "../../../assets/myself_photo.webp";
-import Fundo_image from "../../../assets/fundo_image.webp";
+import Fundo_image from "../../../assets/Fundo_image.webp";
 
 function AboutMe() {
   return (

@@ -104,6 +104,15 @@
   border-radius: 0px 14px 14px 0px;
 }
 
+.seal-about-me-container {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  right: 260px;
+  bottom: 130px;
+  z-index: 3;
+}
+
 @media (max-width: 768px) {
   .about-me-section {
     grid-template-rows: repeat(3, fit-content(100%));
@@ -166,6 +175,12 @@
       rgba(255, 255, 255, 0)
     );
     border-radius: 0px;
+  }
+
+  .seal-about-me-container {
+    right: calc(50% + 60px);
+    bottom: 90px;
+    z-index: 3;
   }
 }
 

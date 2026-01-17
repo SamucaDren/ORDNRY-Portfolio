@@ -1,6 +1,7 @@
 import "./AboutMe - Style.css";
 import myself_photo from "../../../assets/myself_photo.webp";
 import Fundo_image from "../../../assets/Fundo_image.webp";
+import Seal from "../../../resources/Seal";
 
 function AboutMe() {
   return (
@@ -107,6 +108,10 @@ function AboutMe() {
             Sou Samuel Nogueira e atuo no universo do design há mais de 4 anos.
           </p>
         </div>
+        <div className="seal-about-me-container">
+          <Seal />
+        </div>
+
         <img
           className="myselphoto"
           src={myself_photo}

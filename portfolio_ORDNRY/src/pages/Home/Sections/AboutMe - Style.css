@@ -139,7 +139,7 @@
   .about-me-container {
     grid-column: 1 / span 4;
     grid-row: 3 / span 1;
-    height: 700px;
+    height: 570px;
     padding-inline: 24px;
     padding-block: 32px;
     gap: 24px;
@@ -148,9 +148,9 @@
   }
   .myselphoto {
     position: absolute;
-    width: 360px;
+    width: 280px;
     height: auto;
-    right: calc(50% - 180px);
+    right: calc(50% - 140px);
     bottom: -50px;
   }
 

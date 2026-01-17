@@ -98,7 +98,7 @@
   z-index: 1;
   mask-image: linear-gradient(
     to left,
-    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.6),
     rgba(255, 255, 255, 0)
   );
   border-radius: 0px 14px 14px 0px;
@@ -136,13 +136,19 @@
     grid-row: 2 / span 1;
     height: auto;
     padding-inline: 24px;
-    padding-block: 32px;
+    padding-block: 40px;
     gap: 24px;
     background: linear-gradient(
       180deg,
       #d9c7c7 0%,
       rgba(217, 199, 199, 0.5) 100%
     );
+  }
+  .about-me-section h3 {
+    font-size: 26px;
+
+    font-weight: 600;
+    line-height: 120%;
   }
 
   .about-me-container {
@@ -171,10 +177,11 @@
     z-index: 1;
     mask-image: linear-gradient(
       to top,
-      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0)
     );
     border-radius: 0px;
+    filter: blur(5px);
   }
 
   .seal-about-me-container {

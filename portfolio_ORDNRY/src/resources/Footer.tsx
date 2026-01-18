@@ -20,9 +20,22 @@ function Footer() {
             <span>
               <strong>Conteúdo</strong>
             </span>
-            <a onClick={() => scroolToSection("projects-section")}>Projetos</a>
-            <a onClick={() => scroolToSection("about-me-section")}>Sobre</a>
-            <a onClick={() => scroolToSection("my-carrer-section")}>
+            <a
+              href="#projetos"
+              onClick={() => scroolToSection("projects-section")}
+            >
+              Projetos
+            </a>
+            <a
+              href="#sobre-mim"
+              onClick={() => scroolToSection("about-me-section")}
+            >
+              Sobre
+            </a>
+            <a
+              href="#carreira"
+              onClick={() => scroolToSection("my-carrer-section")}
+            >
               Carreira{" "}
             </a>
           </div>

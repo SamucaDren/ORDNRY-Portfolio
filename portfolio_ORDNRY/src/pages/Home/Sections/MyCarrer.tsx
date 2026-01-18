@@ -55,6 +55,20 @@ function MyCarrer() {
             </linearGradient>
           </defs>
         </svg>
+        <div className="mycarrer-group mycarrer-skills">
+          <h4>Dominio em:</h4>
+          <div className="mycarrer-skills-list">
+            <img src="./figma-icon.svg" alt="figma-icon" />
+            <img src="./phothoshop-icon.png" alt="photoshop-icon" />
+            <img src="./illustrator-icon.png" alt="illustrator-icon" />
+            <img src="./after-icon.png" alt="after-effects-icon" />
+            <img src="/html-icon.png" alt="html-icon" />
+            <img src="/css-icon.png" alt="css-icon" />
+            <img src="./react-icon.png" alt="react-icon" />
+            <img src="./trello-icon.svg" alt="trello-icon" />
+            <img src="./notion-icon.svg" alt="notion-icon" />
+          </div>
+        </div>
       </div>
       <div className="mycarrer-list-container" id="my-carrer-section">
         <svg

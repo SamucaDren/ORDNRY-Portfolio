@@ -1,5 +1,5 @@
 .my-carrer-section {
-  padding: 24px 24px 120px 24px;
+  padding: 24px 24px 88px 24px;
   display: flex;
   max-width: 1280px;
   width: 100%;
@@ -165,6 +165,32 @@
   height: auto;
 }
 
+.mycarrer-skills-list {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mycarrer-skills {
+  gap: 24px;
+}
+
+.mycarrer-skills-list img {
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+.mycarrer-skills h4 {
+  color: var(--neutral-700);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  line-height: 120%; /* 28.8px */
+}
+
 @media (max-width: 768px) {
   .my-carrer-section {
     flex-direction: column;
@@ -227,6 +253,12 @@
     font-weight: 800;
   }
 
+  .mycarrer-skills h4 {
+    font-size: 24px;
+
+    font-weight: 700;
+  }
+
   .mycarrer-group-item-text p {
     font-size: 16px;
 
@@ -250,5 +282,9 @@
   .mycarrer-decorative-svg {
     width: 100%;
     height: auto;
+  }
+
+  .mycarrer-skills-list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }

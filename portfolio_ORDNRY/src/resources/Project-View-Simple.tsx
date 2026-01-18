@@ -74,7 +74,7 @@ function Project_View_Simple({
 
         <p
           className={
-            (isMobile ? "body-18-medium" : "body-20-medium") +
+            (isMobile ? "body-16-medium" : "body-20-medium") +
             " color-neutral-500"
           }
         >

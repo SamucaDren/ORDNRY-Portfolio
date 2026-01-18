@@ -103,7 +103,7 @@ function MyCarrer() {
           <div className="mycarrer-group-item">
             <img
               className="mycarrer-group-item-icon"
-              src="./sca-icon.webp"
+              src="./sca-icon.svg"
               alt="sca-icon"
             />
             <div className="mycarrer-group-item-text">
@@ -120,7 +120,7 @@ function MyCarrer() {
           <div className="mycarrer-group-item">
             <img
               className="mycarrer-group-item-icon"
-              src="./unifenas-icon.webp"
+              src="./unifenas-icon.svg"
               alt="unifenas-icon"
             />
             <div className="mycarrer-group-item-text">
@@ -134,7 +134,7 @@ function MyCarrer() {
           <div className="mycarrer-group-item">
             <img
               className="mycarrer-group-item-icon"
-              src="./ui-icon.webp"
+              src="./ui-icon.svg"
               alt="ui-boost-icon"
             />
             <div className="mycarrer-group-item-text">
@@ -145,7 +145,7 @@ function MyCarrer() {
           <div className="mycarrer-group-item">
             <img
               className="mycarrer-group-item-icon"
-              src="./code-icon.webp"
+              src="./code-icon.svg"
               alt="code-boost-icon"
             />
             <div className="mycarrer-group-item-text">

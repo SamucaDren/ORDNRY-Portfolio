@@ -25,11 +25,11 @@
 @media (max-width: 768px) {
   .project-view-simple-container {
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
   }
 
   .project-view-simple-container-content {
-    gap: 32px;
+    gap: 24px;
   }
 
   .project-view-simple-image {

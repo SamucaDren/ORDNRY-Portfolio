@@ -56,9 +56,10 @@
 
 .footer-links-container {
   display: flex;
+
   max-width: 505px;
   width: 100%;
-  align-items: center;
+  align-items: top;
   gap: 16px;
   flex-shrink: 0;
 }
@@ -75,6 +76,11 @@
 
 .footer-links-column span {
   color: var(--neutral-200);
+}
+
+.footer-links-column a {
+  text-decoration: none;
+  color: var(--neutral-400);
 }
 
 .footer-links-column a:hover {

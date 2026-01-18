@@ -22,15 +22,26 @@ function Footer() {
             </span>
             <a onClick={() => scroolToSection("projects-section")}>Projetos</a>
             <a onClick={() => scroolToSection("about-me-section")}>Sobre</a>
-            <a>Carreira </a>
+            <a onClick={() => scroolToSection("my-carrer-section")}>
+              Carreira{" "}
+            </a>
           </div>
           <div className="footer-links-column">
             <span>
               <strong>Contato</strong>
             </span>
-            <a>Behance</a>
-            <a>Linkedin</a>
-            <a>Entre em contato</a>
+            <a href="https://www.behance.net/samuelnogueira9" target="_blank">
+              Behance
+            </a>
+            <a href="https://dribbble.com/samuel_nogueira" target="_blank">
+              Dribbble
+            </a>
+            <a
+              href="https://www.linkedin.com/in/samuel-nogueira-ordnry/?locale=pt_BR"
+              target="_blank"
+            >
+              Linkedin
+            </a>
           </div>
         </div>
       </div>

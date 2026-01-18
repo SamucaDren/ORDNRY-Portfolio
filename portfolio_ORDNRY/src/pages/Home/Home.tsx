@@ -2,7 +2,7 @@ import HeroSection from "./Sections/HeroSection";
 import ProjectsSection from "./Sections/ProjectsSection";
 import AboutMe from "./Sections/AboutMe";
 import Footer from "../../resources/Footer.tsx";
-//import MyCarrer from "./Sections/MyCarrer";
+import MyCarrer from "./Sections/MyCarrer";
 import "./Home-Style.css";
 
 function Home() {
@@ -13,7 +13,8 @@ function Home() {
         <ProjectsSection />
         <div className="linha-home"></div>
         <AboutMe />
-        {/*<MyCarrer />*/}
+        <div className="linha-home"></div>
+        <MyCarrer />
       </main>
       <Footer />
     </div>

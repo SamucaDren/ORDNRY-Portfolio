@@ -9,8 +9,8 @@
   align-self: stretch;
   grid-template-rows: repeat(2, fit-content(100%));
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 88px;
+  margin-bottom: 88px;
 }
 
 .ordnry-about-container {

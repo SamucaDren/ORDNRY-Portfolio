@@ -56,7 +56,7 @@ function MyCarrer() {
           </defs>
         </svg>
         <div className="mycarrer-group mycarrer-skills">
-          <h4>Dominio em:</h4>
+          <h3>Dominio em:</h3>
           <div className="mycarrer-skills-list">
             <img src="./figma-icon.svg" alt="figma-icon" />
             <img src="./phothoshop-icon.png" alt="photoshop-icon" />

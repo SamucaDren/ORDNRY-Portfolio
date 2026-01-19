@@ -12,7 +12,15 @@ function Footer() {
             Crio soluções digitais que equilibram design e usabilidade,
             transformando a interação em uma jornada fluida e significativa.
           </p>
-          <Button text="BAIXAR CURRÍCULO" />
+          <Button
+            text="BAIXAR CURRÍCULO"
+            onClick={() =>
+              window.open(
+                "./Curriculo_Samuel_Nogueira_UI_Designer.pdf",
+                "_blank",
+              )
+            }
+          />
         </div>
 
         <div className="footer-links-container">

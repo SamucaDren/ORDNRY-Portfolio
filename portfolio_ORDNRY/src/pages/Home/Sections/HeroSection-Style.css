@@ -67,10 +67,10 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 24px 24px 80px 24px;
+    padding: 24px 24px 88px 24px;
     border-radius: 24px;
     margin: 0;
-    gap: 64px;
+    gap: 72px;
     width: 100%;
     border-radius: 0px;
     background: linear-gradient(144deg, #332525 20.82%, #0d0808 79.18%);
@@ -86,6 +86,7 @@
 
   .hero-content-container {
     height: fit-content;
+    padding: 0px;
   }
 
   .overlay-hero {

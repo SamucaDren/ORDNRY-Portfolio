@@ -44,8 +44,13 @@
   align-self: stretch;
 }
 
-.projects-element-icon {
-  display: static;
+.ornnry-icon-desktop {
+  display: block;
+  fill: var(--red-01);
+}
+
+.ornnry-icon-mobile {
+  display: none;
   fill: var(--red-01);
 }
 
@@ -93,7 +98,10 @@
   .projects-copy-container {
     gap: 24px;
   }
-  .projects-element-icon {
+  .ornnry-icon-desktop {
     display: none;
+  }
+  .ornnry-icon-mobile {
+    display: block;
   }
 }

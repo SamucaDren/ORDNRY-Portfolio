@@ -1,5 +1,6 @@
 import "./Project-View-Simple-Style.css";
 import { useEffect, useState } from "react";
+import { memo } from "react";
 
 type ProjectViewSimpleProps = {
   name: string;
@@ -101,4 +102,4 @@ function Project_View_Simple({
   );
 }
 
-export default Project_View_Simple;
+export default memo(Project_View_Simple);

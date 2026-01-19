@@ -31,11 +31,8 @@
   height: 12px;
 }
 
-@media (max-width: 1200px) {
-  .container-nav-link {
-    width: auto;
-    gap: 18px;
-  }
+.menu-icon-mobile-navbar {
+  display: none;
 }
 
 .container-nav-link a:hover {
@@ -107,5 +104,30 @@
   }
   to {
     transform: scale(1.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icon-mobile-navbar {
+    display: block;
+    fill: var(--red-01);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .container-nav-link {
+    display: none;
+  }
+
+  .container-profile {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-nav-link {
+    width: auto;
+    gap: 18px;
   }
 }

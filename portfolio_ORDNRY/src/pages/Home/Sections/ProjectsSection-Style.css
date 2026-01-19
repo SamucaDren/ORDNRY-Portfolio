@@ -26,6 +26,15 @@
   gap: 16px;
 }
 
+.heading-projects-section {
+  font-family: Manrope;
+  color: var(--neutral-800);
+  font-size: 56px;
+  font-style: 600;
+  margin: 0;
+  line-height: 120%; /* 67.2px */
+}
+
 .projects-copy-container {
   display: flex;
   flex-direction: column;
@@ -36,6 +45,7 @@
 }
 
 .projects-element-icon {
+  display: static;
   fill: var(--red-01);
 }
 
@@ -76,7 +86,14 @@
     width: 100%;
   }
 
+  .heading-projects-section {
+    font-size: 40px;
+  }
+
   .projects-copy-container {
     gap: 24px;
+  }
+  .projects-element-icon {
+    display: none;
   }
 }

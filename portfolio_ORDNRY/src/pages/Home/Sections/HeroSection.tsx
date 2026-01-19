@@ -4,44 +4,24 @@ import "./HeroSection-Style.css";
 import Button from "../../../resources/Button";
 import Navbar from "../../../resources/NavBar";
 import ORDNRY_overlay_hero from "../../../assets/ORDNRY_overlay_hero.svg";
-import IsMobile from "../../../utils/isMobile";
 import scroolToSection from "../../../utils/scroolToSection";
 
 function HeroSection() {
-  const isMobile = IsMobile();
-
   return (
     <header className="hero-section">
       <Navbar />
       <div className="hero-content-container">
         <div className="hero-copy-container">
           <div className="hero-heading-container">
-            <span
-              className={`color-red-withe-01 ${
-                isMobile ? "body-16-medium" : "body-18-medium"
-              }`}
-            >
-              <strong>DESIGN EM ESSÊNCIA</strong>
-            </span>
-            <h1
-              className={
-                "color-neutral-000 " +
-                (isMobile ? "heading-48-medium" : "heading-72-medium ")
-              }
-            >
+            <span className="tag-white">DESIGN EM ESSÊNCIA</span>
+            <h1 className="heading-hero-section">
               O design perfeito é<br></br>
               <strong>ORDINÁRIO!</strong>
             </h1>
           </div>
-          <p
-            className={
-              (isMobile ? "body-16-medium" : "body-18-medium") +
-              " color-neutral-200"
-            }
-          >
+          <p className="subtitle-herosection">
             Crio soluções digitais que equilibram design e usabilidade,
-            transformando {isMobile ? null : <br></br>} interação em uma jornada
-            fluida e significativa.
+            transformando interação em uma jornada fluida e significativa.
           </p>
         </div>
         <Button

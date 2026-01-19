@@ -5,7 +5,7 @@ function MyCarrer() {
     <section className="my-carrer-section">
       <div className="container-copy-mycarrer">
         <div className="container-header-mycarrer">
-          <span className="tag-hat-mycarrer">SKILLS</span>
+          <span className="tag">SKILLS</span>
           <h2 className="h2-mycarrer">Minha Carreira</h2>
         </div>
         <p className="subtitle-mycarrer">

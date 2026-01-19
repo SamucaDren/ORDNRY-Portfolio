@@ -31,19 +31,9 @@ function ProjectsSection() {
     <section className="projects-section" id="projects-section">
       <div className="projects-content-container">
         <div className="projects-header-container">
-          <span
-            className={`color-red-01 ${
-              isMobile ? "body-16-medium" : "body-18-medium"
-            }`}
-          >
-            <strong>DESTAQUES</strong>
-          </span>
-          <h2
-            className={`color-neutral-800 ${
-              isMobile ? "heading-40-semi" : "heading-56-semi"
-            }`}
-          >
-            Meus projetos de UI/UX
+          <span className="tag">DESTAQUES</span>
+          <h2 className="heading-projects-section">
+            Meus projetos de UI Design
           </h2>
         </div>
 
@@ -64,8 +54,7 @@ function ProjectsSection() {
           )}
 
           <p className="body-20-medium color-neutral-600">
-            Interfaces e experiências desenvolvidas com foco em usabilidade e
-            estética funcional.
+            Projetos e estudos de UI focados em produto, usabilidade e impacto.
           </p>
 
           {isMobile ? (

@@ -55,13 +55,7 @@ function Project_View_Simple({
       {!isMobile && count % 2 !== 0 && <img {...imgProps} />}
 
       <div className="project-view-simple-container-content">
-        <span
-          className={
-            (isMobile ? "body-16-medium" : "body-18-medium") + " color-red-01"
-          }
-        >
-          <strong>{typeOfCase + " / " + typeOfProject}</strong>
-        </span>
+        <span className="tag">{typeOfCase + " / " + typeOfProject}</span>
 
         <h3
           className={

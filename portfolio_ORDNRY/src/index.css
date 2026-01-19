@@ -313,14 +313,33 @@ body {
   background-color: var(--neutral-800);
 }
 
-/* =========================
-   CLS FIX – HERO (IMPORTANTE)
-========================= */
-
-/* Aplique essa classe no container do hero */
 .hero-content-container {
-  min-height: 420px; /* trava o layout */
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.tag-white {
+  color: var(--red-withe-01);
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tag {
+  color: var(--red-01);
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .tag-white {
+    font-size: 16px;
+  }
 }

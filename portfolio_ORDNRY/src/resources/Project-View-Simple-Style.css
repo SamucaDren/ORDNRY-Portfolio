@@ -8,18 +8,107 @@
 
 .project-view-simple-image {
   aspect-ratio: 1 / 1;
-  max-width: 504px;
   width: 100%;
-  border-radius: 16px;
+  position: relative;
   object-fit: cover;
   object-position: top left;
-  background: linear-gradient(180deg, rgba(60, 20, 19, 0) 0%, #3c1413 100%);
+  transition: all 0.3s ease-out;
+  z-index: 1;
 }
 
 .project-view-simple-container-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
+}
+
+.project-view-simple-image-container {
+  aspect-ratio: 1 / 1;
+  max-width: 504px;
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: top left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-view-simple-image-container:hover img {
+  transform: scale(1.1);
+}
+
+.project-view-simple-image-element-hover-image {
+  transition: all 0.3s ease-out;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -100%;
+  right: -100%;
+  width: 10%;
+  height: 10%;
+
+  background: linear-gradient(90deg, #e09697 0%, #d47577 100%);
+  filter: blur(6vw);
+  z-index: 2;
+}
+
+.project-view-simple-image-container:hover
+  .project-view-simple-image-element-hover-image {
+  bottom: -40%;
+  right: -40%;
+  width: 80%;
+  height: 80%;
+}
+
+.project-view-simple-image-container-svg {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 24px;
+  height: 24px;
+  z-index: 3;
+  fill: var(--red-withe-04);
+  transition: all 0.3s ease-out;
+}
+
+.project-view-simple-image-container:hover
+  .project-view-simple-image-container-svg {
+  bottom: 24px;
+  right: 24px;
+}
+
+.link-project-view-simple {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  fill: var(--red-01);
+  transition: all 0.3s ease;
+}
+
+.link-project-view-simple:hover {
+  gap: 16px;
+  fill: var(--red-03);
+  color: var(--red-03);
+}
+
+@media ((max-width: 1280px) and (min-width: 769px)) {
+  .project-view-simple-container {
+    gap: 80px;
+  }
+
+  .project-view-simple-image-container {
+    aspect-ratio: 1 / 1;
+    max-width: 264px;
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: top left;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {
@@ -33,6 +122,13 @@
   }
 
   .project-view-simple-image {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: unset;
+    height: auto;
+  }
+
+  .project-view-simple-image-container {
     max-width: 100%;
     width: 100%;
     aspect-ratio: unset;

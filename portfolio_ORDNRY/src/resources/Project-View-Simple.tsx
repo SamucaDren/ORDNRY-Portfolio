@@ -1,6 +1,5 @@
 import "./Project-View-Simple-Style.css";
-import { useEffect, useState } from "react";
-import { memo } from "react";
+import { useEffect, useState, memo } from "react";
 
 type ProjectViewSimpleProps = {
   name: string;
@@ -30,7 +29,6 @@ function Project_View_Simple({
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  // ===== imagem otimizada do Prismic =====
   const imageBase = `${imageUrl}?auto=format,compress`;
 
   const imgProps: React.ImgHTMLAttributes<HTMLImageElement> = {
@@ -38,22 +36,60 @@ function Project_View_Simple({
     className: "project-view-simple-image",
     src: `${imageBase}&w=700`,
     srcSet: `
-    ${imageBase}&w=480 480w,
-    ${imageBase}&w=700 700w,
-    ${imageBase}&w=1024 1024w
-  `,
+      ${imageBase}&w=480 480w,
+      ${imageBase}&w=700 700w,
+      ${imageBase}&w=1024 1024w
+    `,
     sizes: "(max-width: 768px) 90vw, 637px",
     loading: count === 1 ? "eager" : "lazy",
     fetchPriority: count === 1 ? "high" : "auto",
   };
 
+  const handleImageClick = () => {
+    if (behanceLink) {
+      window.open(behanceLink, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <div className="project-view-simple-container">
-      {/* Mobile: imagem sempre antes */}
-      {isMobile && <img {...imgProps} />}
+      {isMobile && (
+        <div
+          className="project-view-simple-image-container"
+          onClick={handleImageClick}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            className="project-view-simple-image-container-svg"
+          >
+            <path d="M25.7071 1C25.7071 0.447718 25.2594 2.58373e-06 24.7071 9.82154e-07L15.7071 1.78294e-06C15.1548 1.44577e-06 14.7071 0.447717 14.7071 1C14.7071 1.55229 15.1548 2 15.7071 2L23.7071 2L23.7071 10C23.7071 10.5523 24.1548 11 24.7071 11C25.2594 11 25.7071 10.5523 25.7071 10L25.7071 1ZM0.707092 25L1.4142 25.7071L25.4142 1.70711L24.7071 1L24 0.292895L-1.44839e-05 24.2929L0.707092 25Z" />
+          </svg>
+          <div className="project-view-simple-image-element-hover-image"></div>
+          <img {...imgProps} />
+        </div>
+      )}
 
-      {/* Desktop: imagem antes quando ímpar */}
-      {!isMobile && count % 2 !== 0 && <img {...imgProps} />}
+      {!isMobile && count % 2 !== 0 && (
+        <div
+          className="project-view-simple-image-container"
+          onClick={handleImageClick}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            className="project-view-simple-image-container-svg"
+          >
+            <path d="M25.7071 1C25.7071 0.447718 25.2594 2.58373e-06 24.7071 9.82154e-07L15.7071 1.78294e-06C15.1548 1.44577e-06 14.7071 0.447717 14.7071 1C14.7071 1.55229 15.1548 2 15.7071 2L23.7071 2L23.7071 10C23.7071 10.5523 24.1548 11 24.7071 11C25.2594 11 25.7071 10.5523 25.7071 10L25.7071 1ZM0.707092 25L1.4142 25.7071L25.4142 1.70711L24.7071 1L24 0.292895L-1.44839e-05 24.2929L0.707092 25Z" />
+          </svg>
+          <div className="project-view-simple-image-element-hover-image"></div>
+          <img {...imgProps} />
+        </div>
+      )}
 
       <div className="project-view-simple-container-content">
         <span className="tag">{typeOfCase + " / " + typeOfProject}</span>
@@ -82,6 +118,7 @@ function Project_View_Simple({
             href={behanceLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
           >
             Ver Projeto
             <svg
@@ -96,8 +133,24 @@ function Project_View_Simple({
         )}
       </div>
 
-      {/* Desktop: imagem depois quando par */}
-      {!isMobile && count % 2 === 0 && <img {...imgProps} />}
+      {!isMobile && count % 2 === 0 && (
+        <div
+          className="project-view-simple-image-container"
+          onClick={handleImageClick}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            className="project-view-simple-image-container-svg"
+          >
+            <path d="M25.7071 1C25.7071 0.447718 25.2594 2.58373e-06 24.7071 9.82154e-07L15.7071 1.78294e-06C15.1548 1.44577e-06 14.7071 0.447717 14.7071 1C14.7071 1.55229 15.1548 2 15.7071 2L23.7071 2L23.7071 10C23.7071 10.5523 24.1548 11 24.7071 11C25.2594 11 25.7071 10.5523 25.7071 10L25.7071 1ZM0.707092 25L1.4142 25.7071L25.4142 1.70711L24.7071 1L24 0.292895L-1.44839e-05 24.2929L0.707092 25Z" />
+          </svg>
+          <div className="project-view-simple-image-element-hover-image"></div>
+          <img {...imgProps} />
+        </div>
+      )}
     </div>
   );
 }

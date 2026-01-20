@@ -14,12 +14,17 @@ function Footer() {
           </p>
           <Button
             text="BAIXAR CURRÍCULO"
-            onClick={() =>
+            onClick={() => {
+              window.gtag?.("event", "download_curriculo", {
+                event_category: "interacao",
+                event_label: "baixar_curriculo",
+              });
+
               window.open(
                 "./Curriculo_Samuel_Nogueira_UI_Designer.pdf",
                 "_blank",
-              )
-            }
+              );
+            }}
           />
         </div>
 

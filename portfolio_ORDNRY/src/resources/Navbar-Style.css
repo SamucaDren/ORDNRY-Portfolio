@@ -24,6 +24,7 @@
   fill: var(--neutral-500);
   color: var(--neutral-500);
   text-decoration: none;
+  position: relative;
 }
 
 .container-nav-link svg {
@@ -39,6 +40,10 @@
   color: var(--red-withe-04);
   fill: var(--red-withe-04);
   transition: color 0.3s ease;
+}
+
+.container-nav-link a:hover .navaber-link-hover-element {
+  top: -60px;
 }
 
 .logo-navbar {
@@ -96,6 +101,22 @@
   bottom: 5px;
   left: 0;
   animation: pulse 0.8s ease-in-out infinite alternate;
+}
+
+.navaber-link-hover-element {
+  width: 114px;
+  height: 107px;
+  position: absolute;
+  left: 50%;
+  top: -160px;
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    180deg,
+    rgba(178, 36, 38, 0.5) 0%,
+    rgba(178, 36, 38, 0) 100%
+  );
+  transition: all 0.2s ease-out;
 }
 
 @keyframes pulse {

@@ -3,7 +3,7 @@
 
   width: 100%;
   height: fit-content;
-  background-color: var(--neutral-000);
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,8 +11,8 @@
   justify-content: center;
 
   align-items: center;
-  background-color: var(--red-01);
-  color: var(--red-withe-03);
+  background-color: var(--red-black-04);
+  color: var(--red-withe-04);
   font-family: var(--body-font-family);
   font-size: 14px;
   font-weight: 500;
@@ -21,5 +21,5 @@
 }
 
 .topbar-container svg {
-  fill: var(--red-black-03);
+  fill: var(--red-withe-01);
 }

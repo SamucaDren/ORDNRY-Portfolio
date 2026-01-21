@@ -61,22 +61,22 @@ function MyCarrer() {
             <img loading="lazy" src="./figma-icon.svg" alt="figma-icon" />
             <img
               loading="lazy"
-              src="./phothoshop-icon.png"
+              src="./phothoshop-icon.webp"
               alt="photoshop-icon"
             />
             <img
               loading="lazy"
-              src="./illustrator-icon.png"
+              src="./illustrator-icon.webp"
               alt="illustrator-icon"
             />
             <img
               loading="lazy"
-              src="./after-icon.png"
+              src="./after-icon.webp"
               alt="after-effects-icon"
             />
-            <img loading="lazy" src="/html-icon.png" alt="html-icon" />
-            <img loading="lazy" src="/css-icon.png" alt="css-icon" />
-            <img loading="lazy" src="./react-icon.png" alt="react-icon" />
+            <img loading="lazy" src="/html-icon.webp" alt="html-icon" />
+            <img loading="lazy" src="/css-icon.webp" alt="css-icon" />
+            <img loading="lazy" src="./react-icon.webp" alt="react-icon" />
             <img loading="lazy" src="./trello-icon.svg" alt="trello-icon" />
             <img loading="lazy" src="./notion-icon.svg" alt="notion-icon" />
           </div>

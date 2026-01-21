@@ -18,7 +18,7 @@ function SlideImagesElement() {
       >
         {[...images, ...images].map((img, index) => (
           <div className="slide" key={index}>
-            <img loading="lazy" src={img} alt="" />
+            <img fetchPriority="high" src={img} alt="" />
           </div>
         ))}
       </div>

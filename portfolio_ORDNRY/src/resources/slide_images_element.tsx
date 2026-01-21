@@ -16,11 +16,20 @@ function SlideImagesElement() {
         className="slide-track multi-row"
         style={{ "--rows": ROWS } as React.CSSProperties}
       >
-        {[...images, ...images].map((img, index) => (
-          <div className="slide" key={index}>
-            <img fetchPriority="high" src={img} alt="" />
-          </div>
-        ))}
+        {[...images, ...images].map((img, index) => {
+          const isLCP = index === 0;
+
+          return (
+            <div className="slide" key={index}>
+              <img
+                src={img}
+                alt=""
+                fetchPriority={isLCP ? "high" : "auto"}
+                loading={isLCP ? "eager" : "lazy"}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

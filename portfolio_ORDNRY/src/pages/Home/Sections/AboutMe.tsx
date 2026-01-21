@@ -113,11 +113,17 @@ function AboutMe() {
         </div>
 
         <img
+          loading="lazy"
           className="myselphoto"
           src={myself_photo}
           alt="Samuel Nogueira Designer Ordnry"
         />
-        <img className="fundooimage" src={Fundo_image} alt="Fundo decorativo" />
+        <img
+          loading="lazy"
+          className="fundooimage"
+          src={Fundo_image}
+          alt="Fundo decorativo"
+        />
       </div>
     </section>
   );

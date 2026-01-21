@@ -3,7 +3,8 @@
 import "./HeroSection-Style.css";
 import Button from "../../../resources/Button";
 import Navbar from "../../../resources/NavBar";
-import ORDNRY_overlay_hero from "../../../assets/ORDNRY_overlay_hero.svg";
+import SlideImagesElement from "../../../resources/slide_images_element";
+//import ORDNRY_overlay_hero from "../../../assets/ORDNRY_overlay_hero.svg";
 import scroolToSection from "../../../utils/scroolToSection";
 
 function HeroSection() {
@@ -29,12 +30,13 @@ function HeroSection() {
           onClick={() => scroolToSection("projects-section")}
         />
       </div>
-      <img
+      {/*      <img
         loading="lazy"
         src={ORDNRY_overlay_hero}
         alt="ORDNRY overlay"
         className="overlay-hero"
-      />
+      />*/}
+      <SlideImagesElement />
     </header>
   );
 }

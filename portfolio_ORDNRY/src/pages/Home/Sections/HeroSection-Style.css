@@ -9,7 +9,7 @@
   width: calc(100% - 32px);
   margin: 16px;
   box-sizing: border-box;
-
+  overflow: hidden;
   align-items: center;
   background: var(--Gradiente);
 }

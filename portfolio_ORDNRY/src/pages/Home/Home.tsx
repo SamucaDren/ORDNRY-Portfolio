@@ -4,10 +4,12 @@ import AboutMe from "./Sections/AboutMe";
 import Footer from "../../resources/Footer.tsx";
 import MyCarrer from "./Sections/MyCarrer";
 import "./Home-Style.css";
+import TopBar from "../../resources/topbar.tsx";
 
 function Home() {
   return (
     <div className="home-page">
+      <TopBar />
       <HeroSection />
       <main>
         <ProjectsSection />

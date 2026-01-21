@@ -83,6 +83,7 @@ export default function Navbar() {
           <img
             src="profile-picture-navbar.webp"
             alt="Profile"
+            loading="lazy"
             className="profile-picture-navbar"
           />
         </div>

@@ -18,7 +18,7 @@ function SlideImagesElement() {
       >
         {[...images, ...images].map((img, index) => (
           <div className="slide" key={index}>
-            <img src={img} alt="" />
+            <img loading="lazy" src={img} alt="" />
           </div>
         ))}
       </div>

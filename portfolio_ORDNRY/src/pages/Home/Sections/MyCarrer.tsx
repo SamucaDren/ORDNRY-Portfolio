@@ -58,15 +58,27 @@ function MyCarrer() {
         <div className="mycarrer-group mycarrer-skills">
           <h3>Dominio em:</h3>
           <div className="mycarrer-skills-list">
-            <img src="./figma-icon.svg" alt="figma-icon" />
-            <img src="./phothoshop-icon.png" alt="photoshop-icon" />
-            <img src="./illustrator-icon.png" alt="illustrator-icon" />
-            <img src="./after-icon.png" alt="after-effects-icon" />
-            <img src="/html-icon.png" alt="html-icon" />
-            <img src="/css-icon.png" alt="css-icon" />
-            <img src="./react-icon.png" alt="react-icon" />
-            <img src="./trello-icon.svg" alt="trello-icon" />
-            <img src="./notion-icon.svg" alt="notion-icon" />
+            <img loading="lazy" src="./figma-icon.svg" alt="figma-icon" />
+            <img
+              loading="lazy"
+              src="./phothoshop-icon.png"
+              alt="photoshop-icon"
+            />
+            <img
+              loading="lazy"
+              src="./illustrator-icon.png"
+              alt="illustrator-icon"
+            />
+            <img
+              loading="lazy"
+              src="./after-icon.png"
+              alt="after-effects-icon"
+            />
+            <img loading="lazy" src="/html-icon.png" alt="html-icon" />
+            <img loading="lazy" src="/css-icon.png" alt="css-icon" />
+            <img loading="lazy" src="./react-icon.png" alt="react-icon" />
+            <img loading="lazy" src="./trello-icon.svg" alt="trello-icon" />
+            <img loading="lazy" src="./notion-icon.svg" alt="notion-icon" />
           </div>
         </div>
       </div>
@@ -88,20 +100,7 @@ function MyCarrer() {
 
           <div className="mycarrer-group-item">
             <img
-              className="mycarrer-group-item-icon"
-              src="./deka-icon.webp"
-              alt="dekathama-icon"
-            />
-            <div className="mycarrer-group-item-text">
-              <h4>Dekathama Imobiliária</h4>
-              <p>
-                Designer Gráfico <span>(2021 - 2023)</span>
-              </p>
-            </div>
-          </div>
-
-          <div className="mycarrer-group-item">
-            <img
+              loading="lazy"
               className="mycarrer-group-item-icon"
               src="./sca-icon.svg"
               alt="sca-icon"
@@ -113,12 +112,28 @@ function MyCarrer() {
               </p>
             </div>
           </div>
+
+          <div className="mycarrer-group-item">
+            <img
+              loading="lazy"
+              className="mycarrer-group-item-icon"
+              src="./deka-icon.webp"
+              alt="dekathama-icon"
+            />
+            <div className="mycarrer-group-item-text">
+              <h4>Dekathama Imobiliária</h4>
+              <p>
+                Designer Gráfico <span>(2021 - 2023)</span>
+              </p>
+            </div>
+          </div>
         </div>
         <div className="linha-mycarrerlist"></div>
         <div className="mycarrer-group">
           <h3>Educação</h3>
           <div className="mycarrer-group-item">
             <img
+              loading="lazy"
               className="mycarrer-group-item-icon"
               src="./unifenas-icon.svg"
               alt="unifenas-icon"
@@ -133,6 +148,7 @@ function MyCarrer() {
           </div>{" "}
           <div className="mycarrer-group-item">
             <img
+              loading="lazy"
               className="mycarrer-group-item-icon"
               src="./ui-icon.svg"
               alt="ui-boost-icon"
@@ -144,6 +160,7 @@ function MyCarrer() {
           </div>{" "}
           <div className="mycarrer-group-item">
             <img
+              loading="lazy"
               className="mycarrer-group-item-icon"
               src="./code-icon.svg"
               alt="code-boost-icon"

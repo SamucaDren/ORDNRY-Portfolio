@@ -118,7 +118,13 @@ function Project_View_Simple({
             href={behanceLink}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.stopPropagation();
+              window.gtag?.("event", `acesso em ${name}`, {
+                event_category: "interacao",
+                event_label: `acesso em ${name}`,
+              });
+            }}
           >
             Ver Projeto
             <svg

@@ -44,7 +44,7 @@
 
 .phrase-impact h3 {
   color: var(--neutral-700, #0d0808);
-  font-family: Manrope;
+  font-family: var(--heading-font-family);
   font-size: 32px;
   font-style: normal;
   font-weight: 600;

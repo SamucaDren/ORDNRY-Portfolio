@@ -17,16 +17,9 @@ function SlideImagesElement() {
         style={{ "--rows": ROWS } as React.CSSProperties}
       >
         {[...images, ...images].map((img, index) => {
-          const isLCP = index === 0;
-
           return (
             <div className="slide" key={index}>
-              <img
-                src={img}
-                alt=""
-                fetchPriority={isLCP ? "high" : "auto"}
-                loading={isLCP ? "eager" : "lazy"}
-              />
+              <img src={img} alt="" fetchPriority="high" />
             </div>
           );
         })}

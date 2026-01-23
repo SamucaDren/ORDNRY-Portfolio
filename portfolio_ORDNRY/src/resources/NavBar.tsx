@@ -4,7 +4,12 @@ import scroolToSection from "../utils/scroolToSection";
 export default function Navbar() {
   return (
     <nav className="container-navbar">
-      <img src="logo.svg" alt="Logo" className="logo-navbar" />
+      <img
+        fetchPriority="high"
+        src="logo.svg"
+        alt="Logo"
+        className="logo-navbar"
+      />
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +92,7 @@ export default function Navbar() {
           <img
             src="profile-picture-navbar.webp"
             alt="Profile"
-            loading="lazy"
+            fetchPriority="high"
             className="profile-picture-navbar"
           />
         </div>

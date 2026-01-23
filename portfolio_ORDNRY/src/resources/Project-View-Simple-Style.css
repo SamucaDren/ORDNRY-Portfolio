@@ -96,18 +96,13 @@
 
 @media ((max-width: 1280px) and (min-width: 769px)) {
   .project-view-simple-container {
-    gap: 80px;
+    gap: 48px;
   }
 
   .project-view-simple-image-container {
-    aspect-ratio: 1 / 1;
-    max-width: 264px;
-    position: relative;
+    max-width: 368px;
+
     width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-    object-position: top left;
-    overflow: hidden;
   }
 }
 

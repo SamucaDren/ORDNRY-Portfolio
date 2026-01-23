@@ -27,7 +27,7 @@
 }
 
 .heading-projects-section {
-  font-family: Manrope;
+  font-family: var(--heading-font-family);
   color: var(--neutral-800);
   font-size: 56px;
   font-style: 600;
@@ -58,6 +58,18 @@
   width: 100%;
   height: 2px;
   background-color: var(--neutral-200);
+}
+
+@media ((max-width: 1280px) and (min-width: 769px)) {
+  .heading-projects-section {
+    font-size: 48px;
+  }
+  .projects-content-container {
+    gap: 32px;
+  }
+  .projects-header-container {
+    width: 368px;
+  }
 }
 
 @media (max-width: 768px) {

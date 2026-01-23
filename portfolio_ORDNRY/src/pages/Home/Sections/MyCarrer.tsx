@@ -83,18 +83,11 @@ function MyCarrer() {
         </div>
       </div>
       <div className="mycarrer-list-container" id="my-carrer-section">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="37"
-          height="40"
-          viewBox="0 0 37 40"
+        <img
+          src="./ordnry-icon.svg"
+          alt="Ícone ORDNRY"
           className="mycarrer-element-icon"
-        >
-          <path
-            opacity="0.5"
-            d="M0 27.2774L12.5307 19.7455L0 12.2137L4.144 5.80153L15.2933 13.7405L14.8 0H22.2L21.7067 13.7405L32.856 5.80153L37 12.2137L24.4693 19.7455L37 27.2774L32.856 33.6896L21.7067 25.7506L22.2 40H14.8L15.2933 25.7506L4.144 33.6896L0 27.2774Z"
-          />
-        </svg>
+        />
         <div className="mycarrer-group">
           <h3>Profissional</h3>
 
@@ -105,6 +98,7 @@ function MyCarrer() {
               src="./sca-icon.svg"
               alt="sca-icon"
             />
+
             <div className="mycarrer-group-item-text">
               <h4>SCA - Prosistemas</h4>
               <p>

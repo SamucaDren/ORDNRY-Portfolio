@@ -1,8 +1,8 @@
 .about-me-section {
   position: relative;
   display: grid;
-  max-width: 1264px;
-  padding: 16px;
+  max-width: 1280px;
+  padding: 24px;
   display: inline-grid;
   row-gap: 16px;
   column-gap: 16px;

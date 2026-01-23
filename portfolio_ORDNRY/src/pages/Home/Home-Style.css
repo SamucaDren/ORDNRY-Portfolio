@@ -11,3 +11,7 @@
   max-width: 1232px;
   background-color: var(--neutral-200);
 }
+
+main {
+  align-content: center;
+}

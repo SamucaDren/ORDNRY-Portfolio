@@ -41,9 +41,7 @@
 
 @media (max-width: 768px) {
   .slider {
-    bottom: -40px;
-    width: 150%;
-    opacity: 0.3;
+    display: none;
   }
 
   .slide img {

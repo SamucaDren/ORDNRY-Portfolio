@@ -16,8 +16,7 @@ function HeroSection() {
           <div className="hero-heading-container">
             <span className="tag-white">DESIGN EM ESSÊNCIA</span>
             <h1 className="heading-hero-section">
-              O design perfeito é<br></br>
-              <strong>ORDINÁRIO!</strong>
+              O design perfeito é <strong>ORDINÁRIO!</strong>
             </h1>
           </div>
           <p className="subtitle-herosection">

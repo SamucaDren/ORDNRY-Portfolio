@@ -5,6 +5,7 @@ import Button from "../../../resources/Button";
 import Navbar from "../../../resources/NavBar";
 import SlideImagesElement from "../../../resources/slide_images_element";
 //import ORDNRY_overlay_hero from "../../../assets/ORDNRY_overlay_hero.svg";
+//import Hero_animation from "../../../resources/hero_animation.tsx";
 import scroolToSection from "../../../utils/scroolToSection";
 
 function HeroSection() {
@@ -35,7 +36,9 @@ function HeroSection() {
         alt="ORDNRY overlay"
         className="overlay-hero"
       />*/}
+
       <SlideImagesElement />
+      {/*<Hero_animation />*/}
     </header>
   );
 }

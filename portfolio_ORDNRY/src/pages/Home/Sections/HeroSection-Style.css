@@ -11,7 +11,7 @@
   box-sizing: border-box;
   overflow: hidden;
   align-items: center;
-  background: var(--Gradiente);
+  background: var(--neutral-800, --Gradiente);
 }
 
 .hero-content-container {

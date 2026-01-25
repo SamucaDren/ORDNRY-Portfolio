@@ -4,6 +4,23 @@
   gap: 120px;
   align-items: center;
   align-self: stretch;
+  transform: translateY(400px);
+  opacity: 0;
+}
+
+.project-view-simple-container.show {
+  animation: show-up 0.8s ease-in-out forwards;
+}
+
+@keyframes show-up {
+  from {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .project-view-simple-image {

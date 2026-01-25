@@ -1,105 +1,72 @@
 :root {
   --Gradiente-Button: linear-gradient(93deg, #bb3736 0.2%, #551919 100.2%);
 }
-
-/* BOTÃO */
 .btn-primary {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px 40px;
   border-radius: 38px;
   border: none;
   cursor: pointer;
-
   color: var(--neutral-000);
   background: var(--Gradiente-Button);
   background-size: 300% 300%;
-
   animation: gradientMove 6s ease infinite;
   z-index: 1;
-
   overflow: hidden;
 }
-
-/* acelera no hover */
 .btn-primary:hover {
   animation-duration: 3s;
 }
-
-/* BORDA EM GRADIENTE */
 .btn-primary::before {
   content: "";
   position: absolute;
   inset: 0;
   padding: 1px;
   border-radius: inherit;
-
-  background: linear-gradient(
-    93deg,
-    rgba(212, 118, 117, 0),
-    rgba(212, 118, 117, 1),
-    rgba(212, 118, 117, 0)
-  );
-
+  background: linear-gradient(93deg, #fff0, rgb(212 118 117), #fff0);
   opacity: 0.6;
   transition: opacity 0.4s ease;
-
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-
   pointer-events: none;
   z-index: 2;
 }
-
 .btn-primary:hover::before {
   opacity: 1;
   box-shadow: 0 0 8px var(--red-03);
 }
-
-/* TEXTO */
 .btn-text {
   position: relative;
   z-index: 3;
 }
-
-/* SVG DECORATIVO */
 .button-element-icon {
   position: absolute;
   top: 50%;
   right: 0%;
-
   height: 80px;
   transform: translateY(-50%) scale(0);
   opacity: 0;
-
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
-
   pointer-events: none;
   fill: var(--red-withe-02);
   z-index: 1;
 }
-
-/* ENTRA / SAI */
 .btn-primary:hover .button-element-icon {
   opacity: 0.5;
   transform: translateY(-50%) scale(1);
 }
-
-/* ROTAÇÃO CONTÍNUA */
 .spin {
   transform-origin: center;
   animation: spin 2s linear infinite;
 }
-
-/* ANIMAÇÃO DO SVG */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -108,8 +75,6 @@
     transform: rotate(360deg);
   }
 }
-
-/* ANIMAÇÃO DO GRADIENTE */
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -121,18 +86,13 @@
     background-position: 0% 50%;
   }
 }
-
-/* ============================= */
-/* HOVER SÓ EM DESKTOP           */
 @media (hover: hover) and (pointer: fine) {
   .btn-primary:hover {
-    animation-duration: 6s; /* acelera no hover */
+    animation-duration: 6s;
   }
-
   .btn-primary:hover::before {
     opacity: 1;
   }
-
   .btn-primary:hover .button-element-icon {
     opacity: 0.5;
     transform: translateY(-50%) scale(1);

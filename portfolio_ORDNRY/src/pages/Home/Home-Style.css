@@ -1,17 +1,15 @@
 .home-page {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
   align-items: center;
 }
-
 .linha-home {
   width: 100%;
   height: 2px;
   max-width: 1232px;
   background-color: var(--neutral-200);
 }
-
 main {
   align-content: center;
 }

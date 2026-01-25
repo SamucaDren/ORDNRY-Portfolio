@@ -1,7 +1,6 @@
 :root {
   --heading-font-family: "Manrope", "Segoe UI", sans-serif;
   --body-font-family: "Inter", "Segoe UI", sans-serif;
-
   --red-black-01: #3c1413;
   --red-black-02: #5b1d1d;
   --red-black-03: #7b2626;
@@ -13,7 +12,6 @@
   --red-withe-02: #ebb8b8;
   --red-withe-03: #f5dada;
   --red-withe-04: #fffdfd;
-
   --neutral-000: #ffffff;
   --neutral-100: #fcf8f8;
   --neutral-200: #f2e9e9;
@@ -23,86 +21,61 @@
   --neutral-600: #675454;
   --neutral-700: #332929;
   --neutral-800: #0d0808;
-
   --complementar-grenn: #00ff80;
-
   --Gradiente: linear-gradient(106deg, #0d0808 0%, #332525 50.9%, #0d0808 100%);
   --Gradiente-Button: linear-gradient(93deg, #bb3736 0.2%, #551919 100.2%);
 }
-
-/* =========================
-   FONTES (CLS SAFE)
-========================= */
-
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  src: url(/fonts/Inter-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-Medium.woff2") format("woff2");
+  src: url(/fonts/Inter-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Manrope";
-  src: url("/fonts/Manrope-Medium.woff2") format("woff2");
+  src: url(/fonts/Manrope-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Manrope";
-  src: url("/fonts/Manrope-SemiBold.woff2") format("woff2");
+  src: url(/fonts/Manrope-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-
-/* =========================
-   RESET + BASE
-========================= */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 body {
   height: 100vh;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-
   background-color: var(--neutral-100);
   color: var(--neutral-700);
-
   font-family: var(--body-font-family);
   font-size: 16px;
   line-height: 1.5;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
 #root {
   width: 100%;
   min-height: 100vh;
 }
-
-/* =========================
-   HEADING CASE
-========================= */
-
 .heading-72-medium {
   font-family: var(--heading-font-family);
   font-size: 72px;
@@ -110,7 +83,6 @@ body {
   line-height: 1.15;
   margin: 0;
 }
-
 .heading-56-semi {
   font-family: var(--heading-font-family);
   font-size: 56px;
@@ -118,7 +90,6 @@ body {
   line-height: 1.15;
   margin: 0;
 }
-
 .heading-48-medium {
   font-family: var(--heading-font-family);
   font-size: 48px;
@@ -126,7 +97,6 @@ body {
   line-height: 1.15;
   margin: 0;
 }
-
 .heading-40-semi {
   font-family: var(--heading-font-family);
   font-size: 40px;
@@ -134,7 +104,6 @@ body {
   line-height: 1.2;
   margin: 0;
 }
-
 .heading-32-semi {
   font-family: var(--heading-font-family);
   font-size: 32px;
@@ -142,11 +111,6 @@ body {
   line-height: 1.25;
   margin: 0;
 }
-
-/* =========================
-   BODY CASE
-========================= */
-
 .body-20-medium {
   font-family: var(--body-font-family);
   font-size: 20px;
@@ -154,7 +118,6 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-
 .body-20-semi {
   font-family: var(--body-font-family);
   font-size: 20px;
@@ -162,7 +125,6 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-
 .body-18-medium {
   font-family: var(--body-font-family);
   font-size: 18px;
@@ -170,7 +132,6 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-
 .body-16-medium {
   font-family: var(--body-font-family);
   font-size: 16px;
@@ -178,11 +139,6 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-
-/* =========================
-   COLOR CASE
-========================= */
-
 .color-red-black-01 {
   color: var(--red-black-01);
 }
@@ -243,11 +199,6 @@ body {
 .color-neutral-800 {
   color: var(--neutral-800);
 }
-
-/* =========================
-   BACKGROUND CASE
-========================= */
-
 .background-red-black-01 {
   background-color: var(--red-black-01);
 }
@@ -308,14 +259,12 @@ body {
 .background-neutral-800 {
   background-color: var(--neutral-800);
 }
-
 .hero-content-container {
   min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .tag-white {
   color: var(--red-withe-01);
   font-family: var(--body-font-family);
@@ -324,7 +273,6 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-
 .tag {
   color: var(--red-01);
   font-family: var(--body-font-family);
@@ -333,7 +281,6 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-
 @media (max-width: 768px) {
   .tag-white {
     font-size: 16px;

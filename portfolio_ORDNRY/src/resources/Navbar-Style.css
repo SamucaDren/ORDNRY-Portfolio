@@ -3,11 +3,9 @@
   width: 100%;
   flex-direction: row;
   max-width: 1232px;
-
   justify-content: space-between;
   align-items: center;
 }
-
 .container-nav-link {
   display: flex;
   width: 504px;
@@ -15,7 +13,6 @@
   align-items: center;
   flex-shrink: 0;
 }
-
 .container-nav-link a {
   cursor: pointer;
   display: flex;
@@ -26,37 +23,30 @@
   text-decoration: none;
   position: relative;
 }
-
 .container-nav-link svg {
   width: 12px;
   height: 12px;
 }
-
 .menu-icon-mobile-navbar {
   display: none;
 }
-
 .container-nav-link a:hover {
   color: var(--red-withe-04);
   fill: var(--red-withe-04);
   transition: color 0.3s ease;
 }
-
 .container-nav-link a:hover .navaber-link-hover-element {
   top: -60px;
 }
-
 .logo-navbar {
   fill: var(--neutral-200);
 }
-
 .container-profile {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 32px;
 }
-
 .Linkedin-link {
   display: flex;
   justify-content: center;
@@ -66,18 +56,15 @@
   transition: all 0.3s ease;
   text-decoration: none;
 }
-
 .Linkedin-link:hover {
   color: var(--red-withe-04);
   fill: var(--red-withe-04);
   transition: color 0.3s ease;
 }
-
 .Linkedin-link:hover .sr-only {
   background-color: var(--red-black-04);
   transition: background-color 0.3s ease;
 }
-
 .sr-only {
   width: 32px;
   height: 32px;
@@ -85,24 +72,20 @@
   border-radius: 4px;
   background-color: var(--neutral-700);
 }
-
 .profile-picture-navbar-container {
   position: relative;
 }
-
 .profile-picture-navbar {
   width: 52px;
   height: 52px;
   border-radius: 50%;
 }
-
 .profile-picture-border-navbar-element {
   position: absolute;
   bottom: 5px;
   left: 0;
   animation: pulse 0.8s ease-in-out infinite alternate;
 }
-
 .navaber-link-hover-element {
   width: 114px;
   height: 107px;
@@ -110,15 +93,9 @@
   left: 50%;
   top: -160px;
   transform: translateX(-50%);
-
-  background: linear-gradient(
-    180deg,
-    rgba(178, 36, 38, 0.5) 0%,
-    rgba(178, 36, 38, 0) 100%
-  );
+  background: linear-gradient(180deg, rgb(178 36 38 / 0.5) 0%, #fff0 100%);
   transition: all 0.2s ease-out;
 }
-
 @keyframes pulse {
   from {
     transform: scale(1);
@@ -127,7 +104,6 @@
     transform: scale(1.2);
   }
 }
-
 @media (max-width: 768px) {
   .menu-icon-mobile-navbar {
     display: block;
@@ -136,16 +112,13 @@
     height: 24px;
     cursor: pointer;
   }
-
   .container-nav-link {
     display: none;
   }
-
   .container-profile {
     display: none;
   }
 }
-
 @media (max-width: 1200px) {
   .container-nav-link {
     width: auto;

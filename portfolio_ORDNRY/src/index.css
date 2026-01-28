@@ -1,16 +1,16 @@
 :root {
   --heading-font-family: "Manrope", "Segoe UI", sans-serif;
   --body-font-family: "Inter", "Segoe UI", sans-serif;
-  --red-black-01: #3c1413;
+  --red-black-01: #3c1314;
   --red-black-02: #5b1d1d;
-  --red-black-03: #7b2626;
-  --red-black-04: #9b2f2e;
-  --red-01: #bb3736;
-  --red-02: #c85655;
-  --red-03: #d47675;
-  --red-withe-01: #e09796;
-  --red-withe-02: #ebb8b8;
-  --red-withe-03: #f5dada;
+  --red-black-03: #7f2628;
+  --red-black-04: #b32426;
+  --red-01: #cc3336;
+  --red-02: #c85557;
+  --red-03: #d47577;
+  --red-withe-01: #e09697;
+  --red-withe-02: #ebb8b9;
+  --red-withe-03: #f5dadb;
   --red-withe-04: #fffdfd;
   --neutral-000: #ffffff;
   --neutral-100: #fcf8f8;
@@ -23,7 +23,7 @@
   --neutral-800: #0d0808;
   --complementar-grenn: #00ff80;
   --Gradiente: linear-gradient(106deg, #0d0808 0%, #332525 50.9%, #0d0808 100%);
-  --Gradiente-Button: linear-gradient(93deg, #bb3736 0.2%, #551919 100.2%);
+  --Gradiente-Button: linear-gradient(93deg, #b32426 0.2%, #5b1d1d 100.2%);
 }
 @font-face {
   font-family: "Inter";

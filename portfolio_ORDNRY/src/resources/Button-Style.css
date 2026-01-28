@@ -1,5 +1,5 @@
 :root {
-  --Gradiente-Button: linear-gradient(93deg, #bb3736 0.2%, #551919 100.2%);
+  --Gradiente-Button: linear-gradient(93deg, #cc3336 0.2%, #5b1d1d 100.2%);
 }
 .btn-primary {
   position: relative;
@@ -26,7 +26,7 @@
   inset: 0;
   padding: 1px;
   border-radius: inherit;
-  background: linear-gradient(93deg, #fff0, rgb(212 118 117), #fff0);
+  background: linear-gradient(93deg, #fff0, #d47577, #fff0);
   opacity: 0.6;
   transition: opacity 0.4s ease;
   -webkit-mask:
@@ -56,7 +56,7 @@
     opacity 0.3s ease,
     transform 0.3s ease;
   pointer-events: none;
-  fill: var(--red-withe-02);
+  fill: var(--red-02);
   z-index: 1;
 }
 .btn-primary:hover .button-element-icon {

@@ -7,8 +7,10 @@ import SlideImagesElement from "../../../resources/slide_images_element";
 //import ORDNRY_overlay_hero from "../../../assets/ORDNRY_overlay_hero.svg";
 //import Hero_animation from "../../../resources/hero_animation.tsx";
 import scroolToSection from "../../../utils/scroolToSection";
+import IsMobile from "../../../utils/isMobile.tsx";
 
 function HeroSection() {
+  const isMobile = IsMobile();
   return (
     <header className="hero-section">
       <Navbar />
@@ -22,6 +24,7 @@ function HeroSection() {
           </div>
           <p className="subtitle-herosection">
             Crio soluções digitais que equilibram design e usabilidade,
+            {isMobile ? null : <br />}
             transformando interação em uma jornada fluida e significativa.
           </p>
         </div>

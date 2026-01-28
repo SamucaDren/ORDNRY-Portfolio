@@ -266,12 +266,16 @@ body {
   justify-content: center;
 }
 .tag-white {
-  color: var(--red-withe-01);
+  color: var(--red-03);
   font-family: var(--body-font-family);
   font-size: 18px;
   font-weight: 500;
   line-height: 1.6;
   margin: 0;
+  padding-inline: 8px;
+  padding-top: 2px;
+  border: solid 1px var(--red-03);
+  border-radius: 4px;
 }
 .tag {
   color: var(--red-01);
@@ -280,6 +284,10 @@ body {
   font-weight: 500;
   line-height: 1.6;
   margin: 0;
+  padding-inline: 8px;
+  padding-top: 2px;
+  border: solid 1px var(--red-01);
+  border-radius: 4px;
 }
 @media (max-width: 768px) {
   .tag-white {

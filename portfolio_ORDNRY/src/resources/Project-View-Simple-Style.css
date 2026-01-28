@@ -6,6 +6,11 @@
   transform: translateY(400px);
   opacity: 0;
 }
+
+.project-view-simple-container .tag {
+  width: fit-content;
+}
+
 .project-view-simple-container.show {
   animation: show-up 0.8s ease-in-out forwards;
 }

@@ -17,15 +17,14 @@ function HeroSection() {
       <div className="hero-content-container">
         <div className="hero-copy-container">
           <div className="hero-heading-container">
-            <span className="tag-white">DESIGN EM ESSÊNCIA</span>
+            <span className="tag-white">SIMPLES NÃO, ORDINÁRIO</span>
             <h1 className="heading-hero-section">
-              O design perfeito é <strong>ORDINÁRIO!</strong>
+              <strong>Criatividade</strong> para sua funcionalidade!
             </h1>
           </div>
           <p className="subtitle-herosection">
-            Crio soluções digitais que equilibram design e usabilidade,
-            {isMobile ? null : <br />}
-            transformando interação em uma jornada fluida e significativa.
+            O design funcional não grita. Ele funciona. E, às vezes,
+            {isMobile ? null : <br />}o ordinário tem um extra antes.
           </p>
         </div>
         <Button

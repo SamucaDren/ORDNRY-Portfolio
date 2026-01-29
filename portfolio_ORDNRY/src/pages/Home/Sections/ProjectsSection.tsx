@@ -45,7 +45,8 @@ function ProjectsSection() {
           />
 
           <p className="body-20-medium color-neutral-600">
-            Projetos e estudos de UI focados em produto, usabilidade e impacto.
+            Interfaces criadas para funcionar bem no uso real, no contexto real
+            e para pessoas reais.
           </p>
 
           <img

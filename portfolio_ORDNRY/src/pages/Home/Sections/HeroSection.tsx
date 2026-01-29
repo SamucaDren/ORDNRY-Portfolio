@@ -19,7 +19,9 @@ function HeroSection() {
           <div className="hero-heading-container">
             <span className="tag-white">SIMPLES NÃO, ORDINÁRIO</span>
             <h1 className="heading-hero-section">
-              <strong>Criatividade</strong> para sua funcionalidade!
+              <strong>Criatividade</strong> {isMobile ? <br /> : null}para{" "}
+              {isMobile ? null : <br />}sua {isMobile ? <br /> : null}
+              funcionalidade!
             </h1>
           </div>
           <p className="subtitle-herosection">

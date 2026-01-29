@@ -9,8 +9,8 @@ function Footer() {
         <div className="footer-copy-container">
           <img src="./logo.svg" alt="ORDNRY Logo" className="footer-logo" />
           <p className="color-neutral-100 body-16-medium">
-            Crio soluções digitais que equilibram design e usabilidade,
-            transformando a interação em uma jornada fluida e significativa.
+            Portfólio de Samuel Nogueira, designer UI com foco no ordinário bem
+            resolvido em interfaces digitais.
           </p>
           <Button
             text="BAIXAR CURRÍCULO"

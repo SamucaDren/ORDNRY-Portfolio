@@ -9,8 +9,7 @@ function MyCarrer() {
           <h2 className="h2-mycarrer">Minha Carreira</h2>
         </div>
         <p className="subtitle-mycarrer">
-          Interfaces e experiências desenvolvidas com foco em usabilidade e
-          estética funcional.
+          Atuação e aprendizados ao longo da minha carreira como designer UI.
         </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"

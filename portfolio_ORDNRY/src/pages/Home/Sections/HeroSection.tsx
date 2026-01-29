@@ -17,7 +17,7 @@ function HeroSection() {
       <div className="hero-content-container">
         <div className="hero-copy-container">
           <div className="hero-heading-container">
-            <span className="tag-white">SIMPLES NÃO, ORDINÁRIO</span>
+            <span className="tag-white">ORDINÁRIO SIM, SIMPLISTA NÃO</span>
             <h1 className="heading-hero-section">
               <strong>Criatividade</strong> {isMobile ? <br /> : null}para{" "}
               {isMobile ? null : <br />}sua {isMobile ? <br /> : null}
@@ -25,8 +25,8 @@ function HeroSection() {
             </h1>
           </div>
           <p className="subtitle-herosection">
-            O design funcional não grita. Ele funciona. E, às vezes,
-            {isMobile ? null : <br />}o ordinário tem um extra antes.
+            Sou designer UI. Interfaces simples na forma, sólidas na
+            experiência.
           </p>
         </div>
         <Button

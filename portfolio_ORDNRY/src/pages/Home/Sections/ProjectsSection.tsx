@@ -45,8 +45,8 @@ function ProjectsSection() {
           />
 
           <p className="body-20-medium color-neutral-600">
-            Interfaces criadas para funcionar bem no uso real, no contexto real
-            e para pessoas reais.
+            Uma seleção de trabalhos autorais e projetos desenvolvidos para
+            estudo e prática
           </p>
 
           <img

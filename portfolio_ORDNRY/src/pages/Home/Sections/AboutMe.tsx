@@ -41,11 +41,12 @@ function AboutMe() {
         </svg>
         <div className="aboout-meu-copy-container">
           <h3 className="heading-32-semi color-red-withe-04">
-            Por que ORDNRY?
+            ORDNRY, mas nada comum!
           </h3>
           <p className="body-18-medium color-red-withe-03">
-            Acredito que o design perfeito é ordinário, porque passa
-            despercebido e todo impacto tem uma função!{" "}
+            O design focado no usuário é sempre um servo de uma função. Ele
+            busca interfaces maduras e claras, quase imperceptíveis para quem as
+            utiliza.
           </p>
         </div>
       </div>
@@ -105,7 +106,8 @@ function AboutMe() {
         <div className="aboout-meu-copy-container">
           <h3 className="heading-32-semi color-red-withe-04">Sobre mim</h3>
           <p className="body-18-medium color-red-withe-03">
-            Sou Samuel Nogueira e atuo no universo do design há mais de 4 anos.
+            Sou Samuel Nogueira e atuo nesse universo do design há mais de 4
+            anos.
           </p>
         </div>
         <div className="seal-about-me-container">

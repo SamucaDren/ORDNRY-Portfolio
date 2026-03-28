@@ -11,7 +11,7 @@ function HeroSection() {
   const isMobile = IsMobile();
   return (
     <header className="hero-section">
-      <Navbar />
+      <Navbar aplyingTo="front_end" />
       <div className="hero-content-container">
         <div className="hero-copy-container">
           <div className="hero-heading-container">

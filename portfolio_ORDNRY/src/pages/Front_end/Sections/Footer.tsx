@@ -20,10 +20,7 @@ function Footer() {
                 event_label: "baixar_curriculo",
               });
 
-              window.open(
-                "./Curriculo_Samuel_Nogueira_UI_Designer.pdf",
-                "_blank",
-              );
+              window.open("./Curriculo_Samuel_Nogueira_FrontEnd.pdf", "_blank");
             }}
           />
         </div>

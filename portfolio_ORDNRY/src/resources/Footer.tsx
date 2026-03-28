@@ -2,7 +2,11 @@ import "./Footer-Style.css";
 import Button from "./Button";
 import scroolToSection from "../utils/scroolToSection";
 
-function Footer() {
+type FooterProps = {
+  aplyingTo?: "ui_design" | "front_end";
+};
+
+function Footer({ aplyingTo = "ui_design" }: FooterProps) {
   return (
     <footer className="footer-container">
       <div className="footer-content-container">
@@ -21,7 +25,11 @@ function Footer() {
               });
 
               window.open(
-                "./Curriculo_Samuel_Nogueira_UI_Designer.pdf",
+                aplyingTo === "ui_design"
+                  ? "./Curriculo_Samuel_Nogueira_UI_Designer.pdf"
+                  : aplyingTo === "front_end"
+                    ? "./Curriculo_Samuel_Nogueira_FrontEnd.pdf"
+                    : "",
                 "_blank",
               );
             }}

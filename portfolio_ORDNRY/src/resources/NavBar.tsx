@@ -1,7 +1,12 @@
 import "./Navbar-Style.css";
 import scroolToSection from "../utils/scroolToSection";
 
-export default function Navbar() {
+type NavbarProps = {
+  // Adicione quaisquer props necessárias aqui
+  aplyingTo?: "ui_design" | "front_end";
+};
+
+function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
   return (
     <nav className="container-navbar">
       <img
@@ -43,7 +48,13 @@ export default function Navbar() {
           <div className="navaber-link-hover-element"></div>
         </a>
         <a
-          href="./Curriculo_Samuel_Nogueira_UI_Designer.pdf"
+          href={
+            aplyingTo === "ui_design"
+              ? "./Curriculo_Samuel_Nogueira_UI_Designer.pdf"
+              : aplyingTo === "front_end"
+                ? "./Curriculo_Samuel_Nogueira_FrontEnd.pdf"
+                : ""
+          }
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
@@ -100,3 +111,4 @@ export default function Navbar() {
     </nav>
   );
 }
+export default Navbar;

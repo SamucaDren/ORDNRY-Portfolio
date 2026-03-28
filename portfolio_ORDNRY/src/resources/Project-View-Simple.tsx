@@ -8,7 +8,9 @@ type ProjectViewSimpleProps = {
   typeOfCase?: string;
   typeOfProject?: string;
   count: number;
-  behanceLink?: string;
+  behanceLink?: string | null;
+  githubLink?: string | null;
+  hostLink?: string | null;
 };
 
 function Project_View_Simple({
@@ -19,6 +21,8 @@ function Project_View_Simple({
   typeOfProject,
   count,
   behanceLink,
+  githubLink,
+  hostLink,
 }: ProjectViewSimpleProps) {
   const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -64,10 +68,23 @@ function Project_View_Simple({
     fetchPriority: count === 1 ? "high" : "auto",
   };
 
+  // prioridade: host > behance > github
+  const mainLink = hostLink || behanceLink || githubLink;
+
   const handleImageClick = () => {
-    if (behanceLink) {
-      window.open(behanceLink, "_blank", "noopener,noreferrer");
+    if (mainLink) {
+      window.open(mainLink, "_blank", "noopener,noreferrer");
     }
+  };
+
+  const handleClick = (e: React.MouseEvent, link: string) => {
+    e.stopPropagation();
+    window.open(link, "_blank", "noopener,noreferrer");
+
+    window.gtag?.("event", `acesso em ${name}`, {
+      event_category: "interacao",
+      event_label: `acesso em ${name}`,
+    });
   };
 
   return (
@@ -115,21 +132,55 @@ function Project_View_Simple({
           {description}
         </p>
 
+        {hostLink && (
+          <a
+            className="body-20-medium color-red-01 link-project-view-simple"
+            href={hostLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => handleClick(e, hostLink)}
+          >
+            Conferir Site
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="15"
+              viewBox="0 0 25 15"
+            >
+              <path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z" />
+            </svg>
+          </a>
+        )}
+
         {behanceLink && (
           <a
             className="body-20-medium color-red-01 link-project-view-simple"
             href={behanceLink}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={(e) => {
-              e.stopPropagation();
-              window.gtag?.("event", `acesso em ${name}`, {
-                event_category: "interacao",
-                event_label: `acesso em ${name}`,
-              });
-            }}
+            onClick={(e) => handleClick(e, behanceLink)}
           >
-            Ver Projeto
+            Conferir Projeto
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="15"
+              viewBox="0 0 25 15"
+            >
+              <path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z" />
+            </svg>
+          </a>
+        )}
+
+        {githubLink && (
+          <a
+            className="body-20-medium color-red-01 link-project-view-simple"
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => handleClick(e, githubLink)}
+          >
+            Conferir Projeto no GitHub
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"

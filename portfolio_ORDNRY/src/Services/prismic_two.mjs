@@ -1,11 +1,9 @@
 import * as prismic from "@prismicio/client";
 
-// client centralizado
 export const client = prismic.createClient(
   "https://ordnryportfolio.cdn.prismic.io/api/v2",
 );
 
-// buscar todos
 export async function getProjetos() {
   const response = await client.getAllByType("projeto");
 
@@ -20,7 +18,6 @@ export async function getProjetos() {
   }));
 }
 
-// buscar por ID (se precisar depois)
 export async function getProjetoById(id) {
   const doc = await client.getByID(id);
 

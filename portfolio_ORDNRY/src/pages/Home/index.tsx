@@ -1,15 +1,15 @@
-import HeroSection from "./Sections/HeroSection";
-import ProjectsSection from "./Sections/ProjectsSection";
-import AboutMe from "./Sections/AboutMe";
+import HeroSection from "./Sections/HeroSection.tsx";
+import ProjectsSection from "./Sections/ProjectsSection.tsx";
+import AboutMe from "../Sections/AboutMe.tsx";
 import Footer from "../../resources/Footer.tsx";
-import MyCarrer from "./Sections/MyCarrer";
+import MyCarrer from "../Sections/MyCarrer.tsx";
 import "./Home-Style.css";
 import TopBar from "../../resources/topbar.tsx";
 
 function Home() {
   return (
     <div className="home-page">
-      <TopBar />
+      <TopBar function_to_portfolio="UI DESIGN" />
       <HeroSection />
       <main>
         <ProjectsSection />

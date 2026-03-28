@@ -17,6 +17,14 @@
   top: calc(50% - 20px);
   left: calc(50% - 20px);
 }
+
+.seal_text {
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+  text-transform: uppercase;
+}
 @keyframes rotateSeal {
   from {
     transform: rotate(0deg);

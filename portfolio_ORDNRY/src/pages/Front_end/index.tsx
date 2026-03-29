@@ -27,8 +27,6 @@ export default FrontEnd;
 /*
 
 AINDA PARA AJUSTAR:
-- Link do Currículo
 - Adicionar mais skills(adicionar C#, TS, GitHub,...)
 - Fazer a nav Mobile
-
 */

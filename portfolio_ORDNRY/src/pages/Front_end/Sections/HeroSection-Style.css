@@ -66,6 +66,7 @@
     width: 100%;
     border-radius: 0;
     background: linear-gradient(144deg, #332525 20.82%, #0d0808 79.18%);
+    overflow: auto;
   }
   .heading-hero-section {
     font-size: 40px;

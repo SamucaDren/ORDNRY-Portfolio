@@ -68,7 +68,6 @@ function Project_View_Simple({
     fetchPriority: count === 1 ? "high" : "auto",
   };
 
-  // prioridade: host > behance > github
   const mainLink = hostLink || behanceLink || githubLink;
 
   const handleImageClick = () => {

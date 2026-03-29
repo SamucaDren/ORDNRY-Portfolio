@@ -64,8 +64,7 @@ function Project_View_Simple({
       ${imageBase}&w=1024 1024w
     `,
     sizes: "(max-width: 768px) 90vw, 637px",
-    loading: count === 1 ? "eager" : "lazy",
-    fetchPriority: count === 1 ? "high" : "auto",
+    loading: "lazy",
   };
 
   const mainLink = hostLink || behanceLink || githubLink;

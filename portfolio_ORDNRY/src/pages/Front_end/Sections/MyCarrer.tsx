@@ -9,8 +9,7 @@ function MyCarrer() {
           <h2 className="h2-mycarrer">Minha Carreira</h2>
         </div>
         <p className="subtitle-mycarrer">
-          Atuação e aprendizados ao longo da minha carreira como desenvolvedor
-          Front-End.
+          Atuação e aprendizados ao longo da minha carreira.
         </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -61,9 +60,11 @@ function MyCarrer() {
             <img loading="lazy" src="/html-icon.webp" alt="html-icon" />
             <img loading="lazy" src="/css-icon.webp" alt="css-icon" />
             <img loading="lazy" src="./react-icon.webp" alt="react-icon" />
+            <img loading="lazy" src="./ts-icon.svg" alt="typescript-icon" />
+            <img loading="lazy" src="./github-icon.webp" alt="github-icon" />
+            <img loading="lazy" src="./csharp-icon.webp" alt="csharp-icon" />
             <img loading="lazy" src="./figma-icon.svg" alt="figma-icon" />
             <img loading="lazy" src="./trello-icon.svg" alt="trello-icon" />
-            <img loading="lazy" src="./notion-icon.svg" alt="notion-icon" />
           </div>
         </div>
       </div>

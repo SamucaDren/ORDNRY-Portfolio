@@ -61,7 +61,7 @@ function ProjectsSection() {
 
       {error && <p>{error}</p>}
 
-      <Suspense fallback={<p>Carregando projetos...</p>}>
+      <Suspense fallback={null}>
         {loading
           ? null
           : projetos.map((projeto, index) => (

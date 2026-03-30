@@ -44,17 +44,16 @@ function AboutMe() {
             ORDNRY, mas nada comum!
           </h3>
           <p className="body-18-regular color-red-withe-03">
-            O front-end focado no usuário é sempre servo de uma função.
-            Interfaces maduras, claras e quase imperceptíveis para quem as
-            utiliza, mas cuidadosamente construídas por baixo.
+            Front-end focado no usuário serve a uma função. Interfaces claras e
+            quase imperceptíveis para quem usa, mas bem construídas por baixo.
           </p>
         </div>
       </div>
       <div className="phrase-impact">
         <h3>
-          <span>Criatividade </span>
+          <span>Código </span>
           <br />
-          para sua funcionalidade!
+          que gera experiência!
         </h3>
       </div>
       <div className="about-me-container">
@@ -105,8 +104,10 @@ function AboutMe() {
         </div>
         <div className="aboout-meu-copy-container">
           <h3 className="heading-32-semi color-red-withe-04">Sobre mim</h3>
-          <p className="body-18-regular color-red-withe-03">
-            Sou Samuel Nogueira, gosto de design, código e café.
+          <p className="body-18-regular color-red-withe-03 about-me-p">
+            Sou Samuel Nogueira, gosto de design, código e café. Desenvolvedor
+            Front-End com experiência acadêmica. Foco em transformar design em
+            código com fidelidade.
           </p>
         </div>
         <div className="seal-about-me-container">

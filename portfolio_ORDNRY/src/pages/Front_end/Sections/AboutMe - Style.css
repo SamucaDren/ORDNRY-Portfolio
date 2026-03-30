@@ -12,6 +12,10 @@
   margin-top: 88px;
   margin-bottom: 88px;
 }
+
+.about-me-p {
+  max-width: 70%;
+}
 .ordnry-about-container {
   display: flex;
   height: 280px;
@@ -98,6 +102,9 @@
   z-index: 3;
 }
 @media (max-width: 768px) {
+  .about-me-p {
+    max-width: 100%;
+  }
   .about-me-section {
     grid-template-rows: repeat(3, fit-content(100%));
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -134,7 +141,7 @@
   .about-me-container {
     grid-column: 1 / span 4;
     grid-row: 3 / span 1;
-    height: 570px;
+    height: 664px;
     padding-inline: 24px;
     padding-block: 32px;
     gap: 24px;
@@ -165,7 +172,7 @@
 }
 @media ((max-width: 1200px) and (min-width:769px)) {
   .about-me-container .aboout-meu-copy-container {
-    max-width: 400px;
+    max-width: 80%;
   }
   .ordnry-about-container {
     grid-column: 1 / span 7;

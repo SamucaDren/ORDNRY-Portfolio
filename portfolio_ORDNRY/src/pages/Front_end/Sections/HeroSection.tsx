@@ -17,15 +17,13 @@ function HeroSection() {
           <div className="hero-heading-container">
             <span className="tag-white">ORDINÁRIO SIM, SIMPLISTA NÃO</span>
             <h1 className="heading-hero-section">
-              <strong>Criatividade</strong> {isMobile ? <br /> : null}para{" "}
-              {isMobile ? null : <br />}sua {isMobile ? <br /> : null}
-              funcionalidade!
+              Código que gera experiência!
             </h1>
           </div>
           <p className="subtitle-herosection">
-            Código para sua experiência! Sou desenvolvedor Front-End.
-            {isMobile ? null : <br />}Interfaces limpas na forma, sólidas na
-            interação.
+            Sou desenvolvedor Front-End e contruo sites claros e bem
+            estruturados,{isMobile ? " " : <br />}com uma abordagem ordinária na
+            programação.
           </p>
         </div>
         <Button

@@ -5,10 +5,19 @@ import Footer from "./Sections/Footer.tsx";
 import MyCarrer from "./Sections/MyCarrer.tsx";
 import TopBar from "../../resources/topbar.tsx";
 import "./Front_end_page.css";
+import { Helmet } from "react-helmet";
 
 function FrontEnd() {
   return (
     <div className="home-page">
+      <Helmet>
+        <title>ORDNRY | Samuel Nogueira - Desenvolvedor Front-end</title>
+        <meta
+          name="description"
+          content="Portfólio de Samuel Nogueira, desenvolvedor Front-end. Sites claros e bem estruturados, com uma abordagem ordinária da programação."
+        />
+        <link rel="canonical" href="https://ordnrydesign.com/front-end" />
+      </Helmet>
       <TopBar function_to_portfolio="FRONT-END" />
       <HeroSection />
       <main>

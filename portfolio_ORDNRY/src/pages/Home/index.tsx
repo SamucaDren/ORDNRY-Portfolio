@@ -19,6 +19,10 @@ function Home() {
           content="Portfólio de Samuel Nogueira, designer UI. Interfaces digitais claras, maduras e integradas ao uso, com uma abordagem ordinária no design."
         />
         <link rel="canonical" href="https://ordnrydesign.com/" />
+        <meta
+          name="keywords"
+          content="ui design, portfólio, usabilidade, UX/UI, interface, layout, agência"
+        />
       </Helmet>
       <TopBar function_to_portfolio="UI DESIGN" />
       <HeroSection />

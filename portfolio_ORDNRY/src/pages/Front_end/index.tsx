@@ -17,6 +17,10 @@ function FrontEnd() {
           content="Portfólio de Samuel Nogueira, desenvolvedor Front-end. Sites claros e bem estruturados, com uma abordagem ordinária da programação."
         />
         <link rel="canonical" href="https://ordnrydesign.com/front-end" />
+        <meta
+          name="keywords"
+          content="frontend, portfólio, react, typescript, javascript, dev, desenvolvedor"
+        />
       </Helmet>
       <TopBar function_to_portfolio="FRONT-END" />
       <HeroSection />

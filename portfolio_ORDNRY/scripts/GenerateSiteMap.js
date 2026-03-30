@@ -9,16 +9,14 @@ const stream = new SitemapStream({
 
 (async () => {
   try {
-    links
-      .filter((l) => l.url && typeof l.url === "string")
-      .forEach((l) => {
-        stream.write({
-          url: l.url.trim(),
-          changefreq: "weekly",
-          priority: l.url === "/" ? 1.0 : 0.8,
-          lastmod: new Date().toISOString(), // 🔹 aqui
-        });
+    links.forEach((l) => {
+      stream.write({
+        url: l.url.trim(),
+        changefreq: "weekly",
+        priority: l.url === "/" ? 1.0 : 0.8,
+        lastmod: new Date().toISOString(),
       });
+    });
 
     stream.end();
 

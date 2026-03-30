@@ -6,13 +6,13 @@
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://ordnrydesign.com/</loc>
-        <lastmod>2026-03-30T03:58:03.678Z</lastmod>
+        <lastmod>2026-03-30T04:11:27.192Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://ordnrydesign.com/front-end</loc>
-        <lastmod>2026-03-30T03:58:03.681Z</lastmod>
+        <lastmod>2026-03-30T04:11:27.195Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

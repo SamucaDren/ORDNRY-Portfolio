@@ -121,13 +121,17 @@ export default function AboutMe() {
           <Seal text="PORTFÓLIO FRONT-END ORDNRY •" />
         </div>
 
-        <img
+        <Image
+          width={264}
+          height={288}
           loading="lazy"
           className="myselphoto"
           src={myself_photo.src}
           alt="Samuel Nogueira Designer Ordnry"
         />
-        <img
+        <Image
+          width={517}
+          height={280}
           loading="lazy"
           className="fundooimage"
           src={Fundo_image.src}

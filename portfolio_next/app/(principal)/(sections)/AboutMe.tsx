@@ -1,4 +1,5 @@
 import "./AboutMe - Style.css";
+import Image from "next/image";
 import myself_photo from "../../(assets)/myself_photo.webp";
 import Fundo_image from "../../(assets)/Fundo_image.webp";
 import Seal from "../../(components)/Seal";
@@ -13,7 +14,7 @@ function AboutMe() {
           height="32"
           viewBox="0 0 32 32"
         >
-          <g opacity="0.5" clip-path="url(#clip0_334_337)">
+          <g opacity="0.5" clipPath="url(#clip0_334_337)">
             <path
               d="M6.8075 25.1925C5.6575 24.0425 6.42 21.6263 5.835 20.2113C5.2275 18.75 3 17.5625 3 16C3 14.4375 5.2275 13.25 5.835 11.7887C6.42 10.375 5.6575 7.9575 6.8075 6.8075C7.9575 5.6575 10.375 6.42 11.7887 5.835C13.2562 5.2275 14.4375 3 16 3C17.5625 3 18.75 5.2275 20.2113 5.835C21.6263 6.42 24.0425 5.6575 25.1925 6.8075C26.3425 7.9575 25.58 10.3737 26.165 11.7887C26.7725 13.2562 29 14.4375 29 16C29 17.5625 26.7725 18.75 26.165 20.2113C25.58 21.6263 26.3425 24.0425 25.1925 25.1925C24.0425 26.3425 21.6263 25.58 20.2113 26.165C18.75 26.7725 17.5625 29 16 29C14.4375 29 13.25 26.7725 11.7887 26.165C10.375 25.58 7.9575 26.3425 6.8075 25.1925Z"
               stroke="#FFFDFD"
@@ -66,7 +67,7 @@ function AboutMe() {
             viewBox="0 0 32 32"
             fill="none"
           >
-            <g opacity="0.5" clip-path="url(#clip0_334_330)">
+            <g opacity="0.5" clipPath="url(#clip0_334_330)">
               <path
                 d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z"
                 stroke="#FFFDFD"
@@ -114,13 +115,17 @@ function AboutMe() {
           <Seal />
         </div>
 
-        <img
+        <Image
+          width={264}
+          height={288}
           loading="lazy"
           className="myselphoto"
           src={myself_photo.src}
           alt="Samuel Nogueira Designer Ordnry"
         />
-        <img
+        <Image
+          width={517}
+          height={280}
           loading="lazy"
           className="fundooimage"
           src={Fundo_image.src}

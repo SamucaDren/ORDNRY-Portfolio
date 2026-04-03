@@ -126,6 +126,7 @@ export default function AboutMe() {
           className="myselphoto"
           src="/assets/myself_photo.webp"
           alt="Samuel Nogueira Designer Ordnry"
+          unoptimized
         />
         <Image
           width={517}
@@ -134,6 +135,7 @@ export default function AboutMe() {
           className="fundooimage"
           src="/assets/Fundo_image.webp"
           alt="Fundo decorativo"
+          unoptimized
         />
       </div>
     </section>

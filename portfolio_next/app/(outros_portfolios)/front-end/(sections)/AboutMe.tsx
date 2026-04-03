@@ -126,7 +126,7 @@ export default function AboutMe() {
           height={288}
           loading="lazy"
           className="myselphoto"
-          src={myself_photo.src}
+          src={myself_photo}
           alt="Samuel Nogueira Designer Ordnry"
         />
         <Image
@@ -134,7 +134,7 @@ export default function AboutMe() {
           height={280}
           loading="lazy"
           className="fundooimage"
-          src={Fundo_image.src}
+          src={Fundo_image}
           alt="Fundo decorativo"
         />
       </div>

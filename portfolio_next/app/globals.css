@@ -1,6 +1,6 @@
 :root {
-  --heading-font-family: "Manrope", "Segoe UI", sans-serif;
-  --body-font-family: "Inter", "Segoe UI", sans-serif;
+  --heading-font-family: "Manrope", sans-serif;
+  --body-font-family: "Inter", sans-serif;
   --red-black-01: #3c1314;
   --red-black-02: #5b1d1d;
   --red-black-03: #7f2628;
@@ -25,34 +25,6 @@
   --Gradiente: linear-gradient(106deg, #0d0808 0%, #332525 50.9%, #0d0808 100%);
 
   --Gradiente-Button: linear-gradient(93deg, #cc3336 0.2%, #5b1d1d 100.2%);
-}
-@font-face {
-  font-family: "Inter";
-  src: url(/fonts/Inter-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(/fonts/Inter-Medium.woff2) format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url(/fonts/Manrope-Medium.woff2) format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url(/fonts/Manrope-SemiBold.woff2) format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
 }
 *,
 *::before,

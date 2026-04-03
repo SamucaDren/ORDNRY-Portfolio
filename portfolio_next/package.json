@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.15.9",
+    "@next/font": "^14.2.15",
     "@prismicio/client": "^7.21.7",
     "@svgr/webpack": "^8.1.0",
     "helmet": "^8.1.0",

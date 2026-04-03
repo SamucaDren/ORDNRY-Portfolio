@@ -1,11 +1,13 @@
-import { useEffect, useState, lazy, Suspense } from "react";
+import { useEffect, useState, Suspense } from "react";
 import "./ProjectsSection-Style.css";
 import { getProjetosFrontEnd } from "../../../Services/prismic";
 import type { ProjetoFrontEnd } from "../../../Services/prismic";
+import ProjectView02 from "../../../resources/ProjectView02";
 
+/*
 const Project_View_Simple = lazy(
   () => import("../../../resources/Project-View-Simple"),
-);
+);*/
 
 function ProjectsSection() {
   const [projetos, setProjetos] = useState<ProjetoFrontEnd[]>([]);
@@ -58,18 +60,32 @@ function ProjectsSection() {
       <Suspense fallback={null}>
         {loading
           ? null
-          : projetos.map((projeto, index) => (
-              <Project_View_Simple
-                key={projeto.id}
-                count={index + 1}
-                name={projeto.name}
-                description={projeto.description}
-                imageUrl={projeto.capaUrl}
-                typeOfCase={projeto.typeOfCase}
-                typeOfProject={projeto.typeOfProject}
-                githubLink={projeto.GitHubLink}
-                hostLink={projeto.HostLink}
-              />
+          : projetos.map((projeto) => (
+              <>
+                <ProjectView02
+                  key={projeto.id}
+                  //count={index + 1}
+                  name={projeto.name}
+                  description={projeto.description}
+                  imageUrl={projeto.capaUrl}
+                  typeOfCase={projeto.typeOfCase}
+                  typeOfProject={projeto.typeOfProject}
+                  githubLink={projeto.GitHubLink}
+                  hostLink={projeto.HostLink}
+                />
+                {/*
+                <Project_View_Simple
+                  key={projeto.id}
+                  count={index + 1}
+                  name={projeto.name}
+                  description={projeto.description}
+                  imageUrl={projeto.capaUrl}
+                  typeOfCase={projeto.typeOfCase}
+                  typeOfProject={projeto.typeOfProject}
+                  githubLink={projeto.GitHubLink}
+                  hostLink={projeto.HostLink}
+                />*/}
+              </>
             ))}
       </Suspense>
     </section>

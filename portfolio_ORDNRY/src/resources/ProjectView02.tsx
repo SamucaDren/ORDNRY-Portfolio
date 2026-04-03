@@ -1,5 +1,5 @@
 import "./ProjectView02-Style.css";
-import isMobile from "../utils/isMobile";
+//import isMobile from "../utils/isMobile";
 
 type ProjectViewSimpleProps = {
   name: string;
@@ -35,7 +35,7 @@ function ProjectView02({
       <span className="tag">{typeOfCase + " / " + typeOfProject}</span>
       <h3>{name}</h3>
       <p>{description}</p>
-      {isMobile() ? null : <div className="overlayHover" />}
+      {/*isMobile() ? null : <div className="overlayHover" />*/}
     </div>
   );
 }

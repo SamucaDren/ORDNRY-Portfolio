@@ -7,6 +7,7 @@ const manrope = Manrope({
   weight: ["500", "600"],
   subsets: ["latin"],
   display: "swap",
+  fallback: ["Arial", "sans-serif"],
 });
 
 const inter = Inter({
@@ -27,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.className} ${inter.className}`}>
+    <html lang="en" className={`${manrope.className}`}>
       <body>{children}</body>
     </html>
   );

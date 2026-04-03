@@ -78,11 +78,11 @@ function Project_View_Simple({
   const handleClick = (e: React.MouseEvent, link: string) => {
     e.stopPropagation();
     window.open(link, "_blank", "noopener,noreferrer");
-
+    /*
     window.gtag?.("event", `acesso em ${name}`, {
       event_category: "interacao",
       event_label: `acesso em ${name}`,
-    });
+    });*/
   };
 
   return (

@@ -5,8 +5,9 @@ import Footer from "./(sections)/Footer";
 import MyCarrer from "./(sections)/MyCarrer";
 import TopBar from "../../(components)/topbar";
 import "./Front_end_page.css";
+import { Metadata } from "next";
 
-const metadata = {
+export const metadata: Metadata = {
   title: "ORDNRY | Samuel Nogueira - Desenvolvedor Front-end",
   description:
     "Portfólio de Samuel Nogueira, desenvolvedor Front-end. Sites claros e bem estruturados, com uma abordagem ordinária da programação.",

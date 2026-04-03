@@ -49,8 +49,8 @@ function MyCarrer() {
               y2="96.921"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#CC3336" stop-opacity="0.15" />
-              <stop offset="1" stop-color="#CC3336" stop-opacity="0" />
+              <stop stop-color="#CC3336" stopOpacity="0.15" />
+              <stop offset="1" stop-color="#CC3336" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>

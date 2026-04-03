@@ -1,7 +1,6 @@
 import "./AboutMe - Style.css";
 import Image from "next/image";
-import myself_photo from "../../(assets)/myself_photo.webp";
-import Fundo_image from "../../(assets)/Fundo_image.webp";
+
 import Seal from "../../(components)/Seal";
 
 function AboutMe() {
@@ -120,7 +119,7 @@ function AboutMe() {
           height={288}
           loading="lazy"
           className="myselphoto"
-          src={myself_photo}
+          src="/assets/myself_photo.webp"
           alt="Samuel Nogueira Designer Ordnry"
         />
         <Image
@@ -128,7 +127,7 @@ function AboutMe() {
           height={280}
           loading="lazy"
           className="fundooimage"
-          src={Fundo_image}
+          src="/assets/Fundo_image.webp"
           alt="Fundo decorativo"
         />
       </div>

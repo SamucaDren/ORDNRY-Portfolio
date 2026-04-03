@@ -4,9 +4,10 @@
   max-width: 1280px;
   width: 100%;
   flex-direction: column;
-  align-items: flex-start;
+
   gap: 88px;
   box-sizing: border-box;
+  align-items: center;
 }
 .projects-content-container {
   display: flex;

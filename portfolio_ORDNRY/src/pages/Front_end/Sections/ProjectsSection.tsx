@@ -49,12 +49,6 @@ function ProjectsSection() {
             estudo e prática
           </p>
 
-          <img
-            src="./ordnry-icon.svg"
-            alt="Ícone ORDNRY"
-            className="ornnry-icon-mobile"
-          />
-
           <div className="linha-element" />
         </div>
       </div>

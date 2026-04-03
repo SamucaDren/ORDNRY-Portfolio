@@ -7,6 +7,9 @@
   align-items: flex-start;
   gap: 88px;
   box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .projects-content-container {
   display: flex;

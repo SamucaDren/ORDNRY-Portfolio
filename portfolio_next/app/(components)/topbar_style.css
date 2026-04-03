@@ -1,0 +1,21 @@
+.topbar-container {
+  position: RELATIVE;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--red-black-04);
+  color: var(--red-withe-04);
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 16px;
+  z-index: 1000;
+}
+.topbar-container svg {
+  fill: var(--red-withe-01);
+}

@@ -1,0 +1,72 @@
+.container_animation_hero {
+  position: absolute;
+  display: flex;
+  background-color: var(--red-01);
+  height: 100%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  mask-repeat: no-repeat;
+  mask-image: url(./blur-mask.svg);
+  mask-size: 400%;
+  mask-position: 0% 0%;
+  animation: transite 10s ease-in-out infinite;
+}
+@keyframes transite {
+  0% {
+    -webkit-mask-position-x: 0%;
+  }
+  50% {
+    -webkit-mask-position-x: 10%;
+  }
+  100% {
+    -webkit-mask-position-x: 0%;
+  }
+}
+.container_animation_hero2 {
+  position: absolute;
+  display: flex;
+  background-color: var(--red-01);
+  height: 100%;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+  mask-repeat: no-repeat;
+  mask-image: url(./blur-mask.svg);
+  mask-size: 400%;
+  mask-position: 90% 0%;
+  animation: transite2 10s ease-in-out infinite;
+}
+@keyframes transite2 {
+  0% {
+    -webkit-mask-position-x: 90%;
+  }
+  50% {
+    -webkit-mask-position-x: 100%;
+  }
+  100% {
+    -webkit-mask-position-x: 90%;
+  }
+}
+.container_animation_hero div {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    270deg,
+    #332929 0%,
+    #802e2f 52.4%,
+    #9b3032 75%,
+    #cc3336 100%
+  );
+}
+.container_animation_hero2 div {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    270deg,
+    #332929 0%,
+    #802e2f 52.4%,
+    #9b3032 75%,
+    #cc3336 100%
+  );
+}

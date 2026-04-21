@@ -119,6 +119,7 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
               alt="Profile"
               fetchPriority="high"
               className="profile-picture-navbar"
+              unoptimized
             />
           </div>
         </div>

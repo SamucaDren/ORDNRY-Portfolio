@@ -1,10 +1,12 @@
+import dynamic from "next/dynamic";
 import HeroSection from "./(sections)/HeroSection";
-import ProjectsSection from "./(sections)/ProjectsSection";
-import AboutMe from "./(sections)/AboutMe";
-import Footer from "../(components)/Footer";
-import MyCarrer from "./(sections)/MyCarrer";
-import "./Home-Style.css";
 import TopBar from "../(components)/topbar";
+import Footer from "../(components)/Footer";
+import "./Home-Style.css";
+
+const ProjectsSection = dynamic(() => import("./(sections)/ProjectsSection"));
+const AboutMe = dynamic(() => import("./(sections)/AboutMe"));
+const MyCarrer = dynamic(() => import("./(sections)/MyCarrer"));
 
 export const metadata = {
   title: "ORDNRY | Samuel Nogueira - UI Designer focado em Usabilidade",
@@ -21,6 +23,7 @@ function Home() {
     <div className="home-page">
       <TopBar function_to_portfolio="UI DESIGN" />
       <HeroSection />
+
       <main>
         <ProjectsSection />
         <div className="linha-home"></div>
@@ -28,6 +31,7 @@ function Home() {
         <div className="linha-home"></div>
         <MyCarrer />
       </main>
+
       <Footer />
     </div>
   );

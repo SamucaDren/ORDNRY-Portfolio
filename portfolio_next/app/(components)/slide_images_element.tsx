@@ -13,12 +13,12 @@ function SlideImagesElement() {
       >
         {[...Array(4)].map((_, index) => (
           <div className="slide" key={index}>
-            <img
-              src={slides_images.src}
+            <Image
+              src={slides_images}
               alt=""
               width={300}
-              height={300}
-              fetch-priority="high"
+              height={39}
+              unoptimized
             />
           </div>
         ))}

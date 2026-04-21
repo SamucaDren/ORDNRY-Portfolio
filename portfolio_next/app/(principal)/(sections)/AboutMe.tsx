@@ -120,8 +120,7 @@ function AboutMe() {
           loading="lazy"
           className="myselphoto"
           src="/assets/myself_photo.webp"
-          alt="Samuel Nogueira Designer Ordnry"
-          unoptimized
+          alt="Samuel Nogueira"
         />
         <Image
           width={517}
@@ -130,7 +129,6 @@ function AboutMe() {
           className="fundooimage"
           src="/assets/Fundo_image.webp"
           alt="Fundo decorativo"
-          unoptimized
         />
       </div>
     </section>

@@ -117,9 +117,10 @@ function AboutMe() {
         <Image
           src="/assets/myself_photo.webp"
           width={264}
-          height={288}
+          height={330}
           alt="Samuel Nogueira Designer Ordnry"
           className="myselphoto"
+          loading="lazy"
           unoptimized
         />
         <Image

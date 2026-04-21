@@ -13,6 +13,7 @@
   justify-content: flex-end;
   top: 80px;
   box-shadow: 0 0 64px 40px rgba(255, 255, 255, 0.25);
+  text-decoration: none;
   .tag {
     z-index: 1;
     background: rgba(128, 26, 32, 0.7);

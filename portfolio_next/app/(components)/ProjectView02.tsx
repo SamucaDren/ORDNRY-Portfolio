@@ -1,6 +1,4 @@
-"use client";
 import "./ProjectView02-Style.css";
-//import isMobile from "../utils/isMobile";
 
 type ProjectViewSimpleProps = {
   name: string;
@@ -8,7 +6,6 @@ type ProjectViewSimpleProps = {
   imageUrl: string;
   typeOfCase?: string;
   typeOfProject?: string;
-  count?: number;
   behanceLink?: string | null;
   githubLink?: string | null;
   hostLink?: string | null;
@@ -25,19 +22,22 @@ function ProjectView02({
   hostLink,
 }: ProjectViewSimpleProps) {
   const link = behanceLink ?? githubLink ?? hostLink;
+
   return (
-    <div
+    <a
+      href={link ?? "#"}
+      target="_blank"
+      rel="noopener noreferrer"
       className="project-card-container"
       style={{ "--urlBackground": `url(${imageUrl})` } as React.CSSProperties}
-      onClick={() => {
-        if (link) window.open(link, "_blank");
-      }}
     >
-      <span className="tag">{typeOfCase + " / " + typeOfProject}</span>
+      <span className="tag">
+        {[typeOfCase, typeOfProject].filter(Boolean).join(" / ")}
+      </span>
       <h3>{name}</h3>
       <p>{description}</p>
-      {/*isMobile() ? null : <div className="overlayHover" />*/}
-    </div>
+    </a>
   );
 }
+
 export default ProjectView02;

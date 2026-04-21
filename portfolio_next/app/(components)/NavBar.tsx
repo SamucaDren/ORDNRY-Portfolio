@@ -2,6 +2,7 @@
 import "./Navbar-Style.css";
 import scroolToSection from "../(utils)/scroolToSection";
 import { useState } from "react";
+import Image from "next/image";
 //import isMobile from "../utils/isMobile";
 
 type NavbarProps = {
@@ -14,9 +15,11 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
   return (
     <nav className="navbar">
       <div className="container-navbar">
-        <img
+        <Image
           fetchPriority="high"
           src="logo.svg"
+          width={128}
+          height={28}
           alt="Logo"
           className="logo-navbar"
         />
@@ -109,8 +112,10 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
               <circle cx="8.5" cy="8.5" r="8.5" fill="#675454" />
               <circle cx="8.5" cy="8.5" r="5.5" fill="#00FF80" />
             </svg>
-            <img
-              src="profile-picture-navbar.webp"
+            <Image
+              width={52}
+              height={52}
+              src="/profile-picture-navbar.webp"
               alt="Profile"
               fetchPriority="high"
               className="profile-picture-navbar"

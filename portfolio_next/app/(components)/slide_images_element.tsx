@@ -17,8 +17,9 @@ function SlideImagesElement() {
               src={slides_images}
               alt=""
               width={300}
-              height={39}
+              height={40}
               unoptimized
+              priority
             />
           </div>
         ))}

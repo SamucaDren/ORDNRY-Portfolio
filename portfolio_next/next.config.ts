@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizeCss: true,
   },
+  compiler: {
+    removeConsole: true,
+  },
   images: {
     qualities: [75, 100],
   },

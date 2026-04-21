@@ -115,12 +115,9 @@ function AboutMe() {
         </div>
 
         <Image
-          width={264}
-          height={288}
-          loading="lazy"
-          className="myselphoto"
           src="/assets/myself_photo.webp"
           alt="Samuel Nogueira Designer Ordnry"
+          className="myselphoto"
           unoptimized
         />
         <Image

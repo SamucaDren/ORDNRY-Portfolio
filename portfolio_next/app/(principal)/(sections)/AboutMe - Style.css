@@ -76,6 +76,7 @@
 .myselphoto {
   position: absolute;
   height: 360px;
+  width: auto;
   bottom: 0;
   right: 72px;
   z-index: 2;

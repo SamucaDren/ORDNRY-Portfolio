@@ -5,6 +5,7 @@ import "./HeroSection-Style.css";
 import Button from "../../(components)/Button";
 import Navbar from "../../(components)/NavBar";
 import SlideImagesElement from "../../(components)/slide_images_element";
+import OtherPortfolioLink from "../../(components)/otherPortfolioLink";
 //import ORDNRY_overlay_hero from "../../../assets/ORDNRY_overlay_hero.svg";
 //import Hero_animation from "../../../resources/hero_animation.tsx";
 import scroolToSection from "../../(utils)/scroolToSection";
@@ -34,6 +35,7 @@ function HeroSection() {
           text="CONFERIR PROJETOS"
           onClick={() => scroolToSection("projects-section")}
         />
+        <OtherPortfolioLink portfolio={"Front-End"} url={"/front-end"} />
       </div>
       {/*      <img
         loading="lazy"

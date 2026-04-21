@@ -4,6 +4,8 @@ import "./HeroSection-Style.css";
 import Button from "../../../(components)/Button";
 import Navbar from "../../../(components)/NavBar";
 import SlideImagesElement from "../../../(components)/slide_images_element";
+
+import OtherPortfolioLink from "../../../(components)/otherPortfolioLink";
 import scroolToSection from "../../../(utils)/scroolToSection";
 import IsMobile from "../../../(utils)/isMobile";
 
@@ -30,6 +32,7 @@ function HeroSection() {
           text="CONFERIR PROJETOS"
           onClick={() => scroolToSection("projects-section")}
         />
+        <OtherPortfolioLink portfolio={"UI Design"} url={"/"} />
       </div>
       {/*      <img
         loading="lazy"

@@ -59,7 +59,7 @@
 }
 @media (max-width: 768px) {
   .hero-section {
-    padding: 24px 24px 88px 24px;
+    padding: 24px 24px 0px 24px;
     border-radius: 24px;
     margin: 0;
     gap: 72px;

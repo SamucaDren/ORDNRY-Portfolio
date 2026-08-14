@@ -13,6 +13,12 @@
   opacity: 0.4;
 }
 
+.slideImage {
+  height: 500px;
+  width: auto;
+  display: block;
+}
+
 .slideTrack {
   display: flex;
   width: max-content;

@@ -18,6 +18,7 @@ function SlideImagesElement() {
               width={3853}
               height={500}
               priority
+              unoptimized
               className={styles.slideImage}
             />
           </div>

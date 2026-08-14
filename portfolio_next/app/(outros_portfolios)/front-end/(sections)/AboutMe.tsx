@@ -1,7 +1,7 @@
 import "./AboutMe-Style.css";
 import Image from "next/image";
 
-import Seal from "../../../(components)/Seal";
+import Seal from "../../../(components)/seal";
 
 export default function AboutMe() {
   return (

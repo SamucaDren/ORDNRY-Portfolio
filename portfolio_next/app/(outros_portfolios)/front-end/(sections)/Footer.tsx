@@ -1,7 +1,7 @@
 "use client";
 
 import "./Footer-Style.css";
-import Button from "../../../(components)/Button";
+import Button from "../../../(components)/button";
 import scroolToSection from "../../../(utils)/scroolToSection";
 
 function Footer() {

@@ -1,4 +1,4 @@
-import "./Button-Style.css";
+import styles from "./style.module.css";
 
 type ButtonProps = {
   text: string;
@@ -7,14 +7,14 @@ type ButtonProps = {
 
 export default function Button({ text, onClick }: ButtonProps) {
   return (
-    <button className="btn-primary" onClick={onClick}>
+    <button className={styles.btn_primary} onClick={onClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 37 40"
-        className="button-element-icon"
+        className={styles.button_element_icon}
         aria-hidden="true"
       >
-        <g className="spin">
+        <g className={styles.spin}>
           <path
             opacity="0.5"
             d="M0 27.2774L12.5307 19.7455L0 12.2137L4.144 5.80153L15.2933 13.7405L14.8 0H22.2L21.7067 13.7405L32.856 5.80153L37 12.2137L24.4693 19.7455L37 27.2774L32.856 33.6896L21.7067 25.7506L22.2 40H14.8L15.2933 25.7506L4.144 33.6896L0 27.2774Z"
@@ -22,7 +22,9 @@ export default function Button({ text, onClick }: ButtonProps) {
         </g>
       </svg>
 
-      <span className="btn-text body-18-medium color-neutral-000">{text}</span>
+      <span className={styles.btn_text + "body-18-medium color-neutral-000"}>
+        {text}
+      </span>
     </button>
   );
 }

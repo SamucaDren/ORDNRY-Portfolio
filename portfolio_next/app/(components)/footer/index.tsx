@@ -1,18 +1,26 @@
 "use client";
-import "./Footer-Style.css";
-import Button from "./Button";
-import scroolToSection from "../(utils)/scroolToSection";
+import styles from "./style.module.css";
+import Button from "../button";
+import scroolToSection from "../../(utils)/scroolToSection";
+import Image from "next/image";
 
 type FooterProps = {
   aplyingTo?: "ui_design" | "front_end";
 };
 
-function Footer({ aplyingTo = "ui_design" }: FooterProps) {
+export default function Footer({ aplyingTo = "ui_design" }: FooterProps) {
   return (
-    <footer className="footer-container">
-      <div className="footer-content-container">
-        <div className="footer-copy-container">
-          <img src="./logo.svg" alt="ORDNRY Logo" className="footer-logo" />
+    <footer className={styles.footerContainer}>
+      <div className={styles.footerContentContainer}>
+        <div className={styles.footerCopyContainer}>
+          <Image
+            width={128}
+            height={28}
+            src="./logo.svg"
+            alt="ORDNRY Logo"
+            loading={"lazy"}
+            className={styles.footerLogo}
+          />
           <p className="color-neutral-100 body-16-medium">
             Portfólio de Samuel Nogueira, designer UI com foco no ordinário bem
             resolvido em interfaces digitais.
@@ -37,8 +45,8 @@ function Footer({ aplyingTo = "ui_design" }: FooterProps) {
           />
         </div>
 
-        <div className="footer-links-container">
-          <div className="footer-links-column">
+        <div className={styles.footerLinksContainer}>
+          <div className={styles.footerLinksColumn}>
             <span>
               <strong>Conteúdo</strong>
             </span>
@@ -61,7 +69,7 @@ function Footer({ aplyingTo = "ui_design" }: FooterProps) {
               Carreira{" "}
             </a>
           </div>
-          <div className="footer-links-column">
+          <div className={styles.footerLinksColumn}>
             <span>
               <strong>Contato</strong>
             </span>
@@ -80,16 +88,18 @@ function Footer({ aplyingTo = "ui_design" }: FooterProps) {
           </div>
         </div>
       </div>
-      <div className="linha-footer"></div>
+      <div className={styles.linhaFooter}></div>
       <p className="color-neutral-000 body-16-medium">
         &copy; {new Date().getFullYear()} ORDNRY. Todos os direitos reservados.
       </p>
-      <img
+      <Image
+        width={1200}
+        height={228}
+        loading={"lazy"}
         src="./ordnry-overlay-footer.svg"
         alt="ORDNRY Footer Overlay"
-        className="footer-overlay"
+        className={styles.footerOverlay}
       />
     </footer>
   );
 }
-export default Footer;

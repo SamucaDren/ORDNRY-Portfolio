@@ -1,4 +1,4 @@
-.container-navbar {
+.containerNavbar {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -15,14 +15,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.container-nav-link {
+.containerNavLink {
   display: flex;
   width: 504px;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
 }
-.container-nav-link a {
+.containerNavLink a {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -32,31 +32,31 @@
   text-decoration: none;
   position: relative;
 }
-.container-nav-link svg {
+.containerNavLink svg {
   width: 12px;
   height: 12px;
 }
-.menu-icon-mobile-navbar {
+.menuIconMobileNavbar {
   display: none;
 }
-.container-nav-link a:hover {
+.containerNavLink a:hover {
   color: var(--red-withe-04);
   fill: var(--red-withe-04);
   transition: color 0.3s ease;
 }
-.container-nav-link a:hover .navaber-link-hover-element {
+.containerNavLink a:hover .navbarLinkHoverElement {
   top: -60px;
 }
-.logo-navbar {
+.logoNavbar {
   fill: var(--neutral-200);
 }
-.container-profile {
+.containerProfile {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 32px;
 }
-.Linkedin-link {
+.LinkedinLink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,37 +65,37 @@
   transition: all 0.3s ease;
   text-decoration: none;
 }
-.Linkedin-link:hover {
+.LinkedinLink:hover {
   color: var(--red-withe-04);
   fill: var(--red-withe-04);
   transition: color 0.3s ease;
 }
-.Linkedin-link:hover .sr-only {
+.LinkedinLink:hover .srOnly {
   background-color: var(--red-black-04);
   transition: background-color 0.3s ease;
 }
-.sr-only {
+.srOnly {
   width: 32px;
   height: 32px;
   aspect-ratio: 1/1;
   border-radius: 4px;
   background-color: var(--neutral-700);
 }
-.profile-picture-navbar-container {
+.profilePictureNavbarContainer {
   position: relative;
 }
-.profile-picture-navbar {
+.profilePictureNavbar {
   width: 52px;
   height: 52px;
   border-radius: 50%;
 }
-.profile-picture-border-navbar-element {
+.profilePictureBorderNavbarElement {
   position: absolute;
   bottom: 5px;
   left: 0;
   animation: pulse 0.8s ease-in-out infinite alternate;
 }
-.navaber-link-hover-element {
+.navbarLinkHoverElement {
   width: 114px;
   height: 107px;
   position: absolute;
@@ -106,7 +106,7 @@
   transition: all 0.2s ease-out;
 }
 
-.mobile-menu {
+.mobileMenu {
   display: flex;
   background-color: rgba(51, 41, 41, 0.8);
   backdrop-filter: blur(20px);
@@ -121,7 +121,7 @@
 
   transition: all 0.3s ease;
 
-  .links_container {
+  .linksContainer {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -141,7 +141,7 @@
       justify-content: left;
     }
 
-    .linha-element {
+    .linhaElement {
       width: 100%;
       height: 1px;
       background-color: var(--neutral-600);
@@ -150,7 +150,7 @@
   }
 }
 
-.mobile-menu.open {
+.mobileMenu.open {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
@@ -159,7 +159,7 @@
 }
 
 @media (min-width: 768px) {
-  .mobile-menu.open {
+  .mobileMenu.open {
     display: none;
   }
 }
@@ -173,22 +173,22 @@
   }
 }
 @media (max-width: 768px) {
-  .menu-icon-mobile-navbar {
+  .menuIconMobileNavbar {
     display: block;
     fill: var(--red-01);
     width: 24px;
     height: 24px;
     cursor: pointer;
   }
-  .container-nav-link {
+  .containerNavLink {
     display: none;
   }
-  .container-profile {
+  .containerProfile {
     display: none;
   }
 }
 @media (max-width: 1200px) {
-  .container-nav-link {
+  .containerNavLink {
     width: auto;
     gap: 18px;
   }

@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import HeroSection from "./(sections)/HeroSection";
-import TopBar from "../(components)/topbar";
-import Footer from "../(components)/Footer";
+import TopBar from "../(components)/top-bar";
+import Footer from "../(components)/footer";
 import "./Home-Style.css";
 
 const ProjectsSection = dynamic(() => import("./(sections)/ProjectsSection"));

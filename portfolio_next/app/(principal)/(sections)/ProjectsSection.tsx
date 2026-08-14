@@ -1,6 +1,6 @@
 import "./ProjectsSection-Style.css";
 import { getProjetos } from "../../(services)/prismic";
-import ProjectView02 from "../../(components)/ProjectView02";
+import CardProject from "../../(components)/card-project";
 
 export default async function ProjectsSection() {
   let projetos = [];
@@ -38,7 +38,7 @@ export default async function ProjectsSection() {
       </div>
 
       {projetos.map((projeto) => (
-        <ProjectView02
+        <CardProject
           key={projeto.id}
           name={projeto.name}
           description={projeto.description}

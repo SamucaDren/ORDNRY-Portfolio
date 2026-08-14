@@ -3,7 +3,7 @@ import ProjectsSection from "./(sections)/ProjectsSection";
 import AboutMe from "./(sections)/AboutMe";
 import Footer from "./(sections)/Footer";
 import MyCarrer from "./(sections)/MyCarrer";
-import TopBar from "../../(components)/topbar";
+import TopBar from "../../(components)/top-bar";
 import "./Front_end_page.css";
 import { Metadata } from "next";
 

@@ -2,12 +2,10 @@
 
 "use client";
 import "./HeroSection-Style.css";
-import Button from "../../(components)/Button";
-import Navbar from "../../(components)/NavBar";
-import SlideImagesElement from "../../(components)/slide_images_element";
-import OtherPortfolioLink from "../../(components)/otherPortfolioLink";
-//import ORDNRY_overlay_hero from "../../../assets/ORDNRY_overlay_hero.svg";
-//import Hero_animation from "../../../resources/hero_animation.tsx";
+import Button from "../../(components)/button";
+import Navbar from "../../(components)/nav-bar";
+import SlideImagesElement from "../../(components)/slide-images";
+import OtherPortfolioLink from "../../(components)/other-portfolio-link";
 import scroolToSection from "../../(utils)/scroolToSection";
 import IsMobile from "../../(utils)/isMobile";
 
@@ -45,7 +43,6 @@ function HeroSection() {
       />*/}
 
       <SlideImagesElement />
-      {/*<Hero_animation />*/}
     </header>
   );
 }

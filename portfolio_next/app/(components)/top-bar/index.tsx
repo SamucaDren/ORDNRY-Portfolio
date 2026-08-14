@@ -1,4 +1,4 @@
-import "./topbar_style.css";
+import styles from "./style.module.css";
 
 type TopBarProps = {
   function_to_portfolio: string;
@@ -6,7 +6,7 @@ type TopBarProps = {
 
 function TopBar({ function_to_portfolio: func }: TopBarProps) {
   return (
-    <span className="topbar-container">
+    <span className={styles.topbarContainer}>
       SAMUEL NOGUEIRA{" "}
       <svg
         xmlns="http://www.w3.org/2000/svg"

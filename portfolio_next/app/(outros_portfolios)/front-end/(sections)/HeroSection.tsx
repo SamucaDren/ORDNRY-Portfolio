@@ -1,11 +1,11 @@
 //import { useEffect, useState } from "react";
 "use client";
 import "./HeroSection-Style.css";
-import Button from "../../../(components)/Button";
-import Navbar from "../../../(components)/NavBar";
-import SlideImagesElement from "../../../(components)/slide_images_element";
+import Button from "../../../(components)/button";
+import Navbar from "../../../(components)/nav-bar";
+import SlideImagesElement from "../../../(components)/slide-images";
 
-import OtherPortfolioLink from "../../../(components)/otherPortfolioLink";
+import OtherPortfolioLink from "../../../(components)/other-portfolio-link";
 import scroolToSection from "../../../(utils)/scroolToSection";
 import IsMobile from "../../../(utils)/isMobile";
 
@@ -42,7 +42,6 @@ function HeroSection() {
       />*/}
 
       <SlideImagesElement />
-      {/*<Hero_animation />*/}
     </header>
   );
 }

@@ -1,27 +1,25 @@
 "use client";
-import "./Navbar-Style.css";
-import scroolToSection from "../(utils)/scroolToSection";
+import styles from "./style.module.css";
+import scroolToSection from "../../(utils)/scroolToSection";
 import { useState } from "react";
 import Image from "next/image";
-//import isMobile from "../utils/isMobile";
 
 type NavbarProps = {
-  // Adicione quaisquer props necessárias aqui
   aplyingTo?: "ui_design" | "front_end";
 };
 
 function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="navbar">
-      <div className="container-navbar">
+    <nav className={styles.navbar}>
+      <div className={styles.containerNavbar}>
         <Image
           fetchPriority="high"
           src="logo.svg"
           width={128}
           height={28}
           alt="Logo"
-          className="logo-navbar"
+          className={styles.logoNavbar}
         />
 
         <svg
@@ -29,7 +27,7 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
           width="20"
           height="18"
           viewBox="0 0 20 18"
-          className="menu-icon-mobile-navbar "
+          className={styles.menuIconMobileNavbar}
           onClick={() => setMenuOpen(!isMenuOpen)}
         >
           <path d="M19 0C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447716 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0H19Z" />
@@ -37,27 +35,29 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
           <path d="M19 16C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H1C0.447716 18 0 17.5523 0 17C0 16.4477 0.447715 16 1 16H19Z" />
         </svg>
 
-        <div className="container-nav-link color-neutral-500 body-16-medium">
+        <div
+          className={`${styles.containerNavLink} color-neutral-500 body-16-medium`}
+        >
           <a
             href="#projetos"
             onClick={() => scroolToSection("projects-section")}
           >
             Projetos
-            <div className="navaber-link-hover-element"></div>
+            <div className={styles.navbarLinkHoverElement}></div>
           </a>
           <a
             href="#sobre-mim"
             onClick={() => scroolToSection("about-me-section")}
           >
             Sobre mim
-            <div className="navaber-link-hover-element"></div>
+            <div className={styles.navbarLinkHoverElement}></div>
           </a>
           <a
             href="#carreira"
             onClick={() => scroolToSection("my-carrer-section")}
           >
             Carreira
-            <div className="navaber-link-hover-element"></div>
+            <div className={styles.navbarLinkHoverElement}></div>
           </a>
           <a
             href={
@@ -80,17 +80,17 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
               <path d="M14.435 1.0001C14.435 0.44782 13.9873 0.000105239 13.435 0.000104987L4.43501 0.000105787C3.88273 0.00010545 3.43501 0.447821 3.43501 1.00011C3.43501 1.55239 3.88273 2.00011 4.43501 2.00011L12.435 2.00011L12.435 10.0001C12.435 10.5524 12.8827 11.0001 13.435 11.0001C13.9873 11.0001 14.435 10.5524 14.435 10.0001L14.435 1.0001ZM0.707092 13.728L1.4142 14.4351L14.1421 1.70721L13.435 1.00011L12.7279 0.292999L-1.44839e-05 13.0209L0.707092 13.728Z" />
             </svg>
-            <div className="navaber-link-hover-element"></div>
+            <div className={styles.navbarLinkHoverElement}></div>
           </a>
         </div>
 
-        <div className="container-profile">
+        <div className={styles.containerProfile}>
           <a
             href="https://www.linkedin.com/in/samuel-nogueira-ordnry"
             target="_blank"
-            className="Linkedin-link color-neutral-500 body-18-medium"
+            className={`${styles.LinkedinLink} color-neutral-500 body-18-medium`}
           >
-            <div className="sr-only">
+            <div className={styles.srOnly}>
               {" "}
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
                 <path d="M9.73174 8C8.50207 8 7.5009 9.00098 7.5 10.2316C7.5 11.4622 8.50117 12.4634 9.73174 12.4634C10.9619 12.4634 11.9625 11.4622 11.9625 10.2316C11.9625 9.00111 10.9618 8 9.73174 8Z" />
@@ -100,14 +100,14 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
             </div>
             LinkedIn
           </a>
-          <div className="profile-picture-navbar-container">
+          <div className={styles.profilePictureNavbarContainer}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="17"
               viewBox="0 0 17 17"
               fill="none"
-              className="profile-picture-border-navbar-element"
+              className={styles.profilePictureBorderNavbarElement}
             >
               <circle cx="8.5" cy="8.5" r="8.5" fill="#675454" />
               <circle cx="8.5" cy="8.5" r="5.5" fill="#00FF80" />
@@ -118,14 +118,14 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
               src="/profile-picture-navbar.webp"
               alt="Profile"
               fetchPriority="high"
-              className="profile-picture-navbar"
+              className={styles.profilePictureNavbar}
               unoptimized
             />
           </div>
         </div>
       </div>
-      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
-        <div className="links_container">
+      <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ""}`}>
+        <div className={styles.linksContainer}>
           <a
             href="#projetos"
             onClick={() => (
@@ -181,13 +181,13 @@ function Navbar({ aplyingTo = "ui_design" }: NavbarProps) {
               <path d="M14.435 1.0001C14.435 0.44782 13.9873 0.000105239 13.435 0.000104987L4.43501 0.000105787C3.88273 0.00010545 3.43501 0.447821 3.43501 1.00011C3.43501 1.55239 3.88273 2.00011 4.43501 2.00011L12.435 2.00011L12.435 10.0001C12.435 10.5524 12.8827 11.0001 13.435 11.0001C13.9873 11.0001 14.435 10.5524 14.435 10.0001L14.435 1.0001ZM0.707092 13.728L1.4142 14.4351L14.1421 1.70721L13.435 1.00011L12.7279 0.292999L-1.44839e-05 13.0209L0.707092 13.728Z" />
             </svg>
           </a>
-          <div className="linha-element" />
+          <div className={styles.linhaElement} />
           <a
             href="https://www.linkedin.com/in/samuel-nogueira-ordnry"
             target="_blank"
-            className="Linkedin-link color-neutral-500 body-18-medium"
+            className={`${styles.LinkedinLink} color-neutral-500 body-18-medium`}
           >
-            <div className="sr-only">
+            <div className={styles.srOnly}>
               {" "}
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
                 <path d="M9.73174 8C8.50207 8 7.5009 9.00098 7.5 10.2316C7.5 11.4622 8.50117 12.4634 9.73174 12.4634C10.9619 12.4634 11.9625 11.4622 11.9625 10.2316C11.9625 9.00111 10.9618 8 9.73174 8Z" />

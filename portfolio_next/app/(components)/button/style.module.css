@@ -1,7 +1,7 @@
 :root {
   --Gradiente-Button: linear-gradient(93deg, #cc3336 0.2%, #5b1d1d 100.2%);
 }
-.btn-primary {
+.btn_primary {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -17,10 +17,10 @@
   z-index: 1;
   overflow: hidden;
 }
-.btn-primary:hover {
+.btn_primary:hover {
   animation-duration: 3s;
 }
-.btn-primary::before {
+.btn_primary::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -37,15 +37,15 @@
   pointer-events: none;
   z-index: 2;
 }
-.btn-primary:hover::before {
+.btn_primary:hover::before {
   opacity: 1;
   box-shadow: 0 0 8px var(--red-03);
 }
-.btn-text {
+.btn_text {
   position: relative;
   z-index: 3;
 }
-.button-element-icon {
+.button_element_icon {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -59,7 +59,7 @@
   fill: var(--red-02);
   z-index: 1;
 }
-.btn-primary:hover .button-element-icon {
+.btn_primary:hover .button_element_icon {
   opacity: 0.5;
   transform: translateY(-50%) scale(1);
 }
@@ -87,20 +87,20 @@
   }
 }
 @media (hover: hover) and (pointer: fine) {
-  .btn-primary:hover {
+  .btn_primary:hover {
     animation-duration: 6s;
   }
-  .btn-primary:hover::before {
+  .btn_primary:hover::before {
     opacity: 1;
   }
-  .btn-primary:hover .button-element-icon {
+  .btn_primary:hover .button_element-icon {
     opacity: 0.5;
     transform: translateY(-50%) scale(1);
   }
 }
 
 @media (max-width: 768px) {
-  .btn-primary {
+  .btn_primary {
     width: 100%;
   }
 }

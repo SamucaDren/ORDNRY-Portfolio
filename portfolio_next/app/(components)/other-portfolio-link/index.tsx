@@ -1,4 +1,4 @@
-import "./otherPortfolioLink.css";
+import styles from "./style.module.css";
 
 type otherPortfolioLinkProps = {
   portfolio: string;
@@ -7,7 +7,7 @@ type otherPortfolioLinkProps = {
 
 function OtherPortfolioLink({ portfolio, url }: otherPortfolioLinkProps) {
   return (
-    <a href={url} className="otherPortfolioLinkContainer">
+    <a href={url} className={styles.otherPortfolioLinkContainer}>
       Confira meus Projetos<br></br>de {portfolio}
       <svg
         width="15"

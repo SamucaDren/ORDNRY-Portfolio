@@ -1,4 +1,4 @@
-.topbar-container {
+.topbarContainer {
   position: RELATIVE;
   width: 100%;
   height: fit-content;
@@ -16,6 +16,6 @@
   padding: 4px 16px;
   z-index: 1000;
 }
-.topbar-container svg {
+.topbarContainer svg {
   fill: var(--red-withe-01);
 }

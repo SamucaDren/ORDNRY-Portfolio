@@ -1,4 +1,4 @@
-import "./ProjectView02-Style.css";
+import styles from "./style.module.css";
 
 type ProjectViewSimpleProps = {
   name: string;
@@ -11,7 +11,7 @@ type ProjectViewSimpleProps = {
   hostLink?: string | null;
 };
 
-function ProjectView02({
+function CardProject({
   name,
   description,
   imageUrl,
@@ -28,16 +28,17 @@ function ProjectView02({
       href={link ?? "#"}
       target="_blank"
       rel="noopener noreferrer"
-      className="project-card-container"
+      className={styles.projectCardContainer}
       style={{ "--urlBackground": `url(${imageUrl})` } as React.CSSProperties}
     >
-      <span className="tag">
+      <span className={styles.tag}>
         {[typeOfCase, typeOfProject].filter(Boolean).join(" / ")}
       </span>
+
       <h3>{name}</h3>
       <p>{description}</p>
     </a>
   );
 }
 
-export default ProjectView02;
+export default CardProject;

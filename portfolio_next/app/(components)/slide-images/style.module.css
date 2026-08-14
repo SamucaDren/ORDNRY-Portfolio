@@ -12,32 +12,39 @@
   transform: rotate(-8deg);
   opacity: 0.4;
 }
-.slide-track {
+
+.slideTrack {
   display: flex;
   width: max-content;
   animation: scroll 60s linear infinite;
 }
+
 .slide {
   flex-shrink: 0;
   padding: 0;
 }
+
 .slide img {
   height: 500px;
   width: auto;
   display: block;
 }
+
 @keyframes scroll {
   from {
     transform: translateX(-65%);
   }
+
   to {
     transform: translateX(-15%);
   }
 }
+
 @media (max-width: 768px) {
   .slider {
     display: none;
   }
+
   .slide img {
     height: 300px;
   }

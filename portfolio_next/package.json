@@ -19,6 +19,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.13",
     "@next/bundle-analyzer": "^16.2.2",
     "@types/node": "^20",
     "@types/react": "^19",

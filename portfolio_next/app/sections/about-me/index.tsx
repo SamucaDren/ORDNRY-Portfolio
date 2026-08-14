@@ -1,12 +1,23 @@
-import "./AboutMe-Style.css";
+import styles from "./style.module.css";
 import Image from "next/image";
+import Seal from "@/app/(components)/seal";
 
-import Seal from "../../../(components)/seal";
+interface AboutMeProps {
+  aboutHeadline?: string;
+  aboutSubheadline?: string;
+  personalHeadline?: string;
+  personalSubheadline?: string;
+}
 
-export default function AboutMe() {
+export default function AboutMe({
+  aboutHeadline = "ORDNRY, mas nada comum!",
+  aboutSubheadline = "O design focado no usuário é sempre um servo de uma função. Ele busca interfaces maduras e claras, quase imperceptíveis para quem as utiliza.",
+  personalHeadline = "Sobre mim",
+  personalSubheadline = "Sou Samuel Nogueira e atuo nesse universo do design há mais de 4 anos.",
+}: AboutMeProps) {
   return (
-    <section className="about-me-section" id="about-me-section">
-      <div className="ordnry-about-container">
+    <section className={styles.aboutMeSection} id="about-me-section">
+      <div className={styles.ordnryAboutContainer}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -15,7 +26,7 @@ export default function AboutMe() {
         >
           <g opacity="0.5" clipPath="url(#clip0_334_337)">
             <path
-              d="M6.8075 25.1925C5.6575 24.0425 6.42 21.6263 5.835 20.2113C5.2275 18.75 3 17.5625 3 16C3 14.4375 5.2275 13.25 5.835 11.7887C6.42 10.375 5.6575 7.9575 6.8075 6.8075C7.9575 5.6575 10.375 6.42 11.7887 5.835C13.2562 5.2275 14.4375 3 16 3C17.5625 3 18.75 5.2275 20.2113 5.835C21.6263 6.42 24.0425 5.6575 25.1925 6.8075C26.3425 7.9575 25.58 10.3737 26.165 11.7887C26.7725 13.2562 29 14.4375 29 16C29 17.5625 26.7725 18.75 26.165 20.2113C25.58 21.6263 26.3425 24.0425 25.1925 25.1925C24.0425 26.3425 21.6263 25.58 20.2113 26.165C18.75 26.7725 17.5625 29 16 29C14.4375 29 13.25 26.7725 11.7887 26.165C10.375 25.58 7.9575 26.3425 6.8075 25.1925Z"
+              d="M6.8075 25.1925C5.6575 24.0425 6.42 21.6263 5.835 20.2113C5.2275 18.75 3 17.5625 3 16C3 14.4375 5.2275 13.25 5.835 11.7887C6.42 10.375 5.6575 7.9575 6.8075 6.8075C7.9575 5.6575 10.375 6.42 11.7887 5.835C13.2562 5.2275 14.4375 3 16 3C17.5625 3 18.75 5.2275 20.2113 5.835C21.6263 6.42 24.0425 5.6575 25.1925 6.8075C26.3425 7.9575 25.58 10.3737 26.165 11.7887C26.7725 13.2562 29 14.4375 29 16C29 17.5625 26.7725 18.75 26.165 20.2113C25.58 21.6263 26.3425 24.0425 26.165 25.1925C24.0425 26.3425 21.6263 25.58 20.2113 26.165C18.75 26.7725 17.5625 29 16 29C14.4375 29 13.25 26.7725 11.7887 26.165C10.375 25.58 7.9575 26.3425 6.8075 25.1925Z"
               stroke="#FFFDFD"
               strokeWidth="2"
               strokeLinecap="round"
@@ -33,6 +44,7 @@ export default function AboutMe() {
               strokeLinejoin="round"
             />
           </g>
+
           <defs>
             <clipPath id="clip0_334_337">
               <rect width="32" height="32" fill="white" />
@@ -40,26 +52,26 @@ export default function AboutMe() {
           </defs>
         </svg>
 
-        <div className="aboout-meu-copy-container">
+        <div className={styles.abooutMeuCopyContainer}>
           <h3 className="heading-32-semi color-red-withe-04">
-            ORDNRY, mas nada comum!
+            {aboutHeadline}
           </h3>
+
           <p className="body-18-regular color-red-withe-03">
-            Front-end focado no usuário serve a uma função. Interfaces claras e
-            quase imperceptíveis para quem usa, mas bem construídas por baixo.
+            {aboutSubheadline}
           </p>
         </div>
       </div>
 
-      <div className="phrase-impact">
+      <div className={styles.phraseImpact}>
         <h3>
-          <span>Código </span>
+          <span>Criatividade </span>
           <br />
-          que gera experiência!
+          para sua funcionalidade!
         </h3>
       </div>
 
-      <div className="about-me-container">
+      <div className={styles.aboutMeContainer}>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -98,6 +110,7 @@ export default function AboutMe() {
                 strokeLinejoin="round"
               />
             </g>
+
             <defs>
               <clipPath id="clip0_334_330">
                 <rect width="32" height="32" fill="white" />
@@ -106,33 +119,35 @@ export default function AboutMe() {
           </svg>
         </div>
 
-        <div className="aboout-meu-copy-container">
-          <h3 className="heading-32-semi color-red-withe-04">Sobre mim</h3>
-          <p className="body-18-regular color-red-withe-03 about-me-p">
-            Sou Samuel Nogueira, gosto de design, código e café. Desenvolvedor
-            Front-End com experiência acadêmica. Foco em transformar design em
-            código com fidelidade.
+        <div className={styles.abooutMeuCopyContainer}>
+          <h3 className="heading-32-semi color-red-withe-04">
+            {personalHeadline}
+          </h3>
+
+          <p className="body-18-regular color-red-withe-03">
+            {personalSubheadline}
           </p>
         </div>
 
-        <div className="seal-about-me-container">
-          <Seal text="PORTFÓLIO FRONT-END ORDNRY •" />
+        <div className={styles.sealAboutMeContainer}>
+          <Seal />
         </div>
 
         <Image
-          width={264}
-          height={288}
-          loading="lazy"
-          className="myselphoto"
           src="/assets/myself_photo.webp"
+          width={264}
+          height={330}
           alt="Samuel Nogueira Designer Ordnry"
+          className={styles.myselPhoto}
+          loading="lazy"
           unoptimized
         />
+
         <Image
           width={517}
           height={280}
           loading="lazy"
-          className="fundooimage"
+          className={styles.fundooImage}
           src="/assets/Fundo_image.webp"
           alt="Fundo decorativo"
           unoptimized

@@ -31,7 +31,7 @@ function CardProject({
       className={styles.projectCardContainer}
       style={{ "--urlBackground": `url(${imageUrl})` } as React.CSSProperties}
     >
-      <span className={styles.tag}>
+      <span className={`${styles.tag} tag`}>
         {[typeOfCase, typeOfProject].filter(Boolean).join(" / ")}
       </span>
 

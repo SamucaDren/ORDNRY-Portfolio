@@ -6,8 +6,16 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: true,
   },
+
   images: {
     qualities: [75, 100],
+
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.prismic.io",
+      },
+    ],
   },
 };
 

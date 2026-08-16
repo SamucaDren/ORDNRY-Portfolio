@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import Image from "next/image";
 
 type ProjectViewSimpleProps = {
   name: string;
@@ -29,14 +30,24 @@ function CardProject({
       target="_blank"
       rel="noopener noreferrer"
       className={styles.projectCardContainer}
-      style={{ "--urlBackground": `url(${imageUrl})` } as React.CSSProperties}
     >
       <span className={`${styles.tag} tag`}>
         {[typeOfCase, typeOfProject].filter(Boolean).join(" / ")}
       </span>
 
       <h3>{name}</h3>
+
       <p>{description}</p>
+
+      <div className={styles.overlay} />
+
+      <Image
+        fill
+        src={imageUrl}
+        alt={name}
+        className={styles.imageProject}
+        sizes="(max-width: 768px) calc(100vw - 48px), 1056px"
+      />
     </a>
   );
 }

@@ -1,31 +1,33 @@
-import "./ProjectsSection-Style.css";
-import { getProjetos } from "../../(services)/prismic";
+import styles from "./style.module.css";
+import Image from "next/image";
 import CardProject from "../../(components)/card-project";
+import { ProjetoUIDesign } from "@/app/types/project";
 
-export default async function ProjectsSection() {
-  let projetos = [];
+interface ProjectsSectionProps {
+  projetos: ProjetoUIDesign[];
+}
 
-  try {
-    projetos = await getProjetos();
-  } catch {
-    return <p>Erro ao carregar projetos</p>;
-  }
-
+export default async function ProjectsSection({
+  projetos,
+}: ProjectsSectionProps) {
   return (
-    <section className="projects-section" id="projects-section">
-      <div className="projects-content-container">
-        <div className="projects-header-container">
+    <section className={styles.projectsSection} id="projectsSection">
+      <div className={styles.projectsContentContainer}>
+        <div className={styles.projectsHeaderContainer}>
           <span className="tag">DESTAQUES</span>
-          <h2 className="heading-projects-section">
+
+          <h2 className={styles.headingProjectsSection}>
             Meus projetos de UI Design
           </h2>
         </div>
 
-        <div className="projects-copy-container">
-          <img
+        <div className={styles.projectsCopyContainer}>
+          <Image
+            width={37}
+            height={40}
             src="/ordnry-icon.svg"
             alt="Ícone ORDNRY"
-            className="ornnry-icon-desktop"
+            className={styles.ornnryIconDesktop}
           />
 
           <p className="body-20-medium color-neutral-600">
@@ -33,7 +35,7 @@ export default async function ProjectsSection() {
             estudo e prática
           </p>
 
-          <div className="linha-element" />
+          <div className={styles.linhaElement} />
         </div>
       </div>
 

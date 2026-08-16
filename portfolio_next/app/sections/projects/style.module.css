@@ -1,17 +1,17 @@
-.projects-section {
-  padding: 120px 24px 120px 24px;
+.projectsSection {
+  padding: 120px 24px;
   display: flex;
   max-width: 1280px;
   width: 100%;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 88px;
   box-sizing: border-box;
   position: relative;
-  align-items: center;
   justify-content: center;
 }
-.projects-content-container {
+
+.projectsContentContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -19,14 +19,16 @@
   gap: 120px;
   align-self: stretch;
 }
-.projects-header-container {
+
+.projectsHeaderContainer {
   display: flex;
   width: 504px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
-.heading-projects-section {
+
+.headingProjectsSection {
   font-family: var(--heading-font-family);
   color: var(--neutral-800);
   font-size: 56px;
@@ -34,7 +36,8 @@
   margin: 0;
   line-height: 120%;
 }
-.projects-copy-container {
+
+.projectsCopyContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,52 +45,65 @@
   flex: 1 0 0%;
   align-self: stretch;
 }
-.ornnry-icon-desktop {
+
+.ornnryIconDesktop {
   display: block;
   fill: var(--red-01);
 }
-.ornnry-icon-mobile {
+
+.ornnryIconMobile {
   display: none;
   fill: var(--red-01);
 }
-.linha-element {
+
+.linhaElement {
   width: 100%;
   height: 2px;
   background-color: var(--neutral-200);
 }
-@media ((max-width: 1280px) and (min-width:769px)) {
-  .heading-projects-section {
+
+@media ((max-width: 1280px) and (min-width: 769px)) {
+  .headingProjectsSection {
     font-size: 48px;
   }
-  .projects-content-container {
+
+  .projectsContentContainer {
     gap: 32px;
   }
-  .projects-header-container {
+
+  .projectsHeaderContainer {
     width: 368px;
   }
 }
+
 @media (max-width: 768px) {
-  .projects-section {
-    padding: 80px 24px 80px 24px;
+  .projectsSection {
+    padding: 80px 24px;
     gap: 64px;
   }
-  .projects-content-container {
+
+  .projectsContentContainer {
     flex-direction: column;
     gap: 24px;
   }
-  .projects-header-container {
+
+  .projectsHeaderContainer {
     width: 100%;
   }
-  .heading-projects-section {
+
+  .headingProjectsSection {
     font-size: 40px;
   }
-  .projects-copy-container {
+
+  .projectsCopyContainer {
     gap: 24px;
   }
-  .ornnry-icon-desktop {
+
+  .ornnryIconDesktop {
     display: none;
   }
-  .ornnry-icon-mobile {
+
+  .ornnryIconMobile {
     display: block;
   }
 }

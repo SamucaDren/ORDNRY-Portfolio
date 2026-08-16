@@ -1,12 +1,11 @@
-import dynamic from "next/dynamic";
 import HeroSection from "./(sections)/HeroSection";
 import TopBar from "../(components)/top-bar";
 import Footer from "../(components)/footer";
 import AboutMe from "@/app/sections/about-me";
 import MyCarrer from "@/app/sections/my-carrer/MyCarrer";
+import ProjectsSection from "@/app/sections/projects";
+import { getProjetos } from "@/app/(services)/prismic";
 import "./Home-Style.css";
-
-const ProjectsSection = dynamic(() => import("./(sections)/ProjectsSection"));
 
 export const metadata = {
   title: "ORDNRY | Samuel Nogueira - UI Designer focado em Usabilidade",
@@ -18,14 +17,16 @@ export const metadata = {
   },
 };
 
-function Home() {
+export default async function Home() {
+  const projetos = await getProjetos();
+
   return (
     <div className="home-page">
       <TopBar function_to_portfolio="UI DESIGN" />
       <HeroSection />
 
       <main>
-        <ProjectsSection />
+        <ProjectsSection projetos={projetos} />
         <div className="linha-home"></div>
         <AboutMe />
         <div className="linha-home"></div>
@@ -36,5 +37,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

@@ -1,31 +1,11 @@
 import * as prismic from "@prismicio/client";
+import { ProjetoUIDesign, ProjetoFrontEnd } from "@/app/types/project";
 
 export const client = prismic.createClient(
   "https://ordnryportfolio.cdn.prismic.io/api/v2",
 );
 
-export type ProjetoPortfolio = {
-  id: string;
-  name: string;
-  description: string;
-  capaUrl: string;
-  typeOfCase?: string;
-  typeOfProject?: string;
-  behanceLink?: string;
-};
-
-export type ProjetoFrontEnd = {
-  id: string;
-  name: string;
-  description: string;
-  capaUrl: string;
-  typeOfCase?: string;
-  typeOfProject?: string;
-  GitHubLink?: string;
-  HostLink?: string;
-};
-
-export async function getProjetos(): Promise<ProjetoPortfolio[]> {
+export async function getProjetos(): Promise<ProjetoUIDesign[]> {
   const response = await client.getAllByType("projeto");
 
   return response.map((doc) => ({
@@ -39,7 +19,7 @@ export async function getProjetos(): Promise<ProjetoPortfolio[]> {
   }));
 }
 
-export async function getProjetoById(id: string): Promise<ProjetoPortfolio> {
+export async function getProjetoById(id: string): Promise<ProjetoUIDesign> {
   const doc = await client.getByID(id);
 
   return {
